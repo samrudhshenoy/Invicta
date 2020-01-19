@@ -9342,18 +9342,18 @@ h1, h2, h3, h4, h5,
   .table th {
     font-weight: 500; }
   .table .thead-primary {
-    background: black; }
-
+    background: white; } /**/
     .table .thead-primary tr th {
       padding: 20px 10px;
-      color: #fff !important;
-      border: 1px solid transparent !important; }
+      color: #000 !important;
+      border: 1px solid white !important; }
   .table tbody tr td {
     text-align: center !important;
     vertical-align: middle;
     padding: 40px 10px;
-    border: 1px solid transparent !important;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important; }
+    border-radius: 1px;
+    border: 0px solid black !important;
+    border-bottom: 2px solid rgba(255, 255, 255, 1) !important; }
     .table tbody tr td.product-remove a {
       background: white;
       padding: 4px 10px;
@@ -9396,7 +9396,7 @@ h1, h2, h3, h4, h5,
   color:white;
   width: 100%;
   display: block;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 2px solid rgba(255, 255, 255, 1);
   padding: 20px; }
   .cart-total h3 {
     font-size: 18px;
@@ -9406,6 +9406,7 @@ h1, h2, h3, h4, h5,
     font-weight: 700; }
   .cart-total p {
     width: 100%;
+    color = white;
     display: block; }
     .cart-total p span {
       display: block;
@@ -9936,7 +9937,7 @@ background-color:black;
       .testimony-section .owl-nav .owl-prev:hover span:before, .testimony-section .owl-nav .owl-prev:focus span:before,
       .testimony-section .owl-nav .owl-next:hover span:before,
       .testimony-section .owl-nav .owl-next:focus span:before {
-        color: #000000; }
+        color: #ffffff; }
     .testimony-section .owl-nav .owl-prev {
       left: 50%;
       margin-left: -80px; }
@@ -9966,7 +9967,7 @@ background-color:black;
 .testimony-wrap {
   display: block;
   position: relative;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 0.8); }
   .testimony-wrap .text {
     font-size: 18px; }
