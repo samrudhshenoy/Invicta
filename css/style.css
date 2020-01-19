@@ -441,7 +441,9 @@ pre {
     font-size: inherit;
     color: inherit;
     word-break: normal; }
-
+.color{
+	color = black;
+}
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
@@ -1589,6 +1591,7 @@ pre {
     border: 0; }
 
 .form-control {
+ 
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -1597,7 +1600,7 @@ pre {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: black;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -2826,6 +2829,7 @@ input[type="button"].btn-block {
     pointer-events: none; }
 
 .input-group {
+  color:black;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3376,6 +3380,7 @@ input[type="button"].btn-block {
 .nav-tabs {
   border-bottom: 1px solid #dee2e6; }
   .nav-tabs .nav-item {
+	color:white;
     margin-bottom: -1px; }
   .nav-tabs .nav-link {
     border: 1px solid transparent;
@@ -3389,7 +3394,7 @@ input[type="button"].btn-block {
       border-color: transparent; }
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-    color: #495057;
+    color: white;
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff; }
   .nav-tabs .dropdown-menu {
@@ -3406,6 +3411,7 @@ input[type="button"].btn-block {
   background-color: #007bff; }
 
 .nav-fill .nav-item {
+	color:white;
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -4728,7 +4734,9 @@ a.close.disabled {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none; }
-
+.icon-cog {
+  color: black;
+}
 .modal-dialog-scrollable {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6613,6 +6621,7 @@ button.bg-dark:focus {
 
 .mb-3,
 .my-3 {
+  color:black;
   margin-bottom: 1rem !important; }
 
 .ml-3,
@@ -8176,7 +8185,7 @@ h1, h2, h3, h4, h5,
     color: #fff; }
   .topper .text {
     width: calc(100% - 30px);
-    color: white; }
+    color: black; }
 
 .ftco-navbar-light {
   background: transparent !important;
@@ -8196,7 +8205,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     top: 0; }
   .ftco-navbar-light .navbar-brand {
-    color: #000000; }
+    color: #fffff; }
     .ftco-navbar-light .navbar-brand span {
       color: #fff; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
@@ -8797,6 +8806,7 @@ h1, h2, h3, h4, h5,
       height: 300px;
       margin-bottom: 40px; } }
   .img-2 .icon {
+	color:black;
     width: 100px;
     height: 100px;
     background: #dbcc8f;
@@ -8807,7 +8817,7 @@ h1, h2, h3, h4, h5,
     -ms-border-radius: 50%;
     border-radius: 50%; }
     .img-2 .icon span {
-      color: #fff;
+      color: black;
       font-size: 24px; }
 
 .wrap-about {
@@ -9029,11 +9039,11 @@ h1, h2, h3, h4, h5,
   color: #000000; }
 
 .product-details .quantity-left-minus {
-  background: transparent;
+  background: white;
   padding: 0 15px; }
 
 .product-details .quantity-right-plus {
-  background: transparent;
+  background: white;
   padding: 0 15px; }
 
 .product-details button, .product-details .form-control {
@@ -9228,11 +9238,11 @@ h1, h2, h3, h4, h5,
   color: #dbcc8f; }
 
 .ftco-cart .quantity-left-minus {
-  background: transparent;
+  background: white;
   padding: 16px 20px; }
 
 .ftco-cart .quantity-right-plus {
-  background: transparent;
+  background: white;
   padding: 16px 20px; }
 
 .ftco-cart button, .ftco-cart .form-control {
@@ -9279,7 +9289,8 @@ h1, h2, h3, h4, h5,
   .table th {
     font-weight: 500; }
   .table .thead-primary {
-    background: #dbcc8f; }
+    background: black; }
+
     .table .thead-primary tr th {
       padding: 20px 10px;
       color: #fff !important;
@@ -9304,7 +9315,9 @@ h1, h2, h3, h4, h5,
         .table tbody tr td.product-remove a:hover span {
           color: #fff; }
     .table tbody tr td.quantity {
-      width: 20%; }
+	  background-color: black;
+      width: 20%;
+	  }
     .table tbody tr td.image-prod .img {
       display: block;
       width: 100px;
@@ -9548,6 +9561,7 @@ textarea.form-control {
   font-size: 24px; }
 
 .ftco-section {
+background-color:black;
   padding: 7em 0;
   position: relative; }
   @media (max-width: 767.98px) {
