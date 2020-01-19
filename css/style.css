@@ -8608,7 +8608,7 @@ h1, h2, h3, h4, h5,
           .owl-carousel.home-slider .slider-item .slider-text {
             text-align: center; } }
         .owl-carousel.home-slider .slider-item .slider-text .one-third {
-            max-width: 45%;
+            max-width: 38%;
             right: 250px;
           position: relative;
           z-index: -1;
@@ -9628,7 +9628,9 @@ background-color:black;
       padding: 6em 0; } }
 
 .ftco-choose .divider-one {
-  height: 700px; }
+  height: 700px;
+  width: 352px;
+}
 
 .ftco-choose .divider-two {
   height: 700px; }
@@ -9637,10 +9639,17 @@ background-color:black;
       height: inherit; } }
 
 .ftco-choose .wrap {
-  height: 350px; }
+  height: 350px;
+}
 
 .ftco-choose .full-wrap {
-  height: 350px; }
+  height: 350px;
+}
+
+.ftco-choose .full-wrap2 {
+    height: 320px;
+    width: 351px;
+}
 
 .ftco-choose .text {
   width: 100%; }
