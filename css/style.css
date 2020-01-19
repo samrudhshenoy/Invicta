@@ -443,7 +443,7 @@ pre {
     color: inherit;
     word-break: normal; }
 .color{
-	color = black;
+	color : black;
 }
 .pre-scrollable {
   max-height: 340px;
@@ -8255,7 +8255,7 @@ h1, h2, h3, h4, h5,
     position: relative;
     top: 0; }
   .ftco-navbar-light .navbar-brand {
-    color: #fffff; }
+    color: #fff; }
     .ftco-navbar-light .navbar-brand span {
       color: #fff; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
