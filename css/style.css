@@ -3373,6 +3373,7 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
+  size:25px;
   padding: 0.5rem 1rem; }
   .nav-link:hover, .nav-link:focus {
     text-decoration: none; }
@@ -6625,7 +6626,7 @@ button.bg-dark:focus {
 
 .mb-3,
 .my-3 {
-  color:black;
+  background-color:black;
   margin-bottom: 1rem !important; }
 
 .ml-3,
@@ -9329,14 +9330,16 @@ h1, h2, h3, h4, h5,
       height: 150px;
       margin: 0 auto; }
     .table tbody tr td.product-name {
+	  color: white;
       width: 30%; }
       .table tbody tr td.product-name h3 {
         font-size: 14px;
+		color:white;
         text-transform: uppercase;
         letter-spacing: 2px;
         font-weight: 700; }
     .table tbody tr td.total, .table tbody tr td.price {
-      color: #000000; }
+      color: white; }
 
 .cart-wrap .btn-primary {
   display: block;
@@ -9539,7 +9542,7 @@ h1, h2, h3, h4, h5,
   background: #fff !important;
   color: #000000 !important;
   font-size: 18px;
-  border-radius: 0px;
+  border-radius: 15px;
   -webkit-box-shadow: none !important;
   box-shadow: none !important; }
   .form-control:focus, .form-control:active {
