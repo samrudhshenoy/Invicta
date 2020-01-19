@@ -397,10 +397,6 @@ mark,
     max-width: 100%;
     height: auto; }
 
-.img-fluid2 {
-    max-width: 100%;
-    height: auto; }
-
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
@@ -498,7 +494,7 @@ pre {
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11,  .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
@@ -506,6 +502,22 @@ pre {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px; }
+
+.col-md-12 {
+    position: relative;
+    padding-top: 17px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.shad {
+    text-shadow: 1px 1px 0px #000;
+}
+
+.shadbig {
+    text-shadow: 2px 2px 4px #000;
+}
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -2103,6 +2115,35 @@ fieldset:disabled a.btn {
     .show > .btn-primary.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
+
+.btn-primary2 {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000;
+    border-width: 2px;
+}
+.btn-primary2:hover {
+    color: #000;
+    background-color:transparent;
+    border-color: #000000;
+    border-width: 2px;
+}
+.btn-primary2:focus, .btn-primary2.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
+.btn-primary2.disabled, .btn-primary2:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff; }
+.btn-primary2:not(:disabled):not(.disabled):active, .btn-primary2:not(:disabled):not(.disabled).active,
+.show > .btn-primary2.dropdown-toggle {
+    color: #fff;
+    background-color: #0062cc;
+    border-color: #005cbf; }
+.btn-primary2:not(:disabled):not(.disabled):active:focus, .btn-primary2:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary2.dropdown-toggle:focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
 
 .btn-secondary {
   color: #fff;
@@ -8218,7 +8259,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-brand span {
       color: #fff; }
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
-      color: #000000; }
+      color: grey; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-brand {
         color: #fff; } }
@@ -8226,6 +8267,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 10px; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    
     font-size: 10px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -8383,7 +8425,7 @@ h1, h2, h3, h4, h5,
       -o-transition: .3s all ease-out;
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
-      color: #000000; }
+        color: #000000; }
 
 .navbar-brand {
   font-weight: 800;
@@ -8630,12 +8672,13 @@ h1, h2, h3, h4, h5,
           letter-spacing: 4px;
           text-transform: uppercase;
           display: inline-block;
-          color: #fff;
-          background: #000000;
+          background: #fff;
+          color: #000;
+         
           padding: 2px 5px; }
           @media (min-width: 992px) {
             .owl-carousel.home-slider .slider-item .slider-text .subheading {
-              color: #fff;
+              color: #000;
               position: relative; } }
         .owl-carousel.home-slider .slider-item .slider-text .text {
           position: relative;
