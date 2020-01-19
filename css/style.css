@@ -9311,7 +9311,7 @@ h1, h2, h3, h4, h5,
     border: 1px solid transparent !important;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important; }
     .table tbody tr td.product-remove a {
-      background: #dbcc8f;
+      background: white;
       padding: 4px 10px;
       color: #000000;
       -webkit-border-radius: 2px;
@@ -9319,8 +9319,8 @@ h1, h2, h3, h4, h5,
       -ms-border-radius: 2px;
       border-radius: 2px; }
       .table tbody tr td.product-remove a:hover {
-        border: 1px solid #dbcc8f;
-        background: #dbcc8f; }
+        border: 1px solid gray;
+        background: gray; }
         .table tbody tr td.product-remove a:hover span {
           color: #fff; }
     .table tbody tr td.quantity {
