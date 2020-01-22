@@ -1608,7 +1608,7 @@ pre {
     border: 0; }
 
 .form-control {
- 
+
   display: block;
   width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
@@ -3508,6 +3508,7 @@ input[type="button"].btn-block {
     justify-content: space-between; }
 
 .navbar-brand {
+  background:black;
   color:white;
   display: inline-block;
   padding-top: 0.3125rem;
@@ -8267,7 +8268,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light .navbar-nav {
       padding-bottom: 10px; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    
+
     font-size: 10px;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -8279,7 +8280,7 @@ h1, h2, h3, h4, h5,
     letter-spacing: 2px;
     opacity: 1 !important; }
     .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-      color: #000000; }
+      color: #93e8e0; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
         padding-left: 0;
@@ -8429,7 +8430,7 @@ h1, h2, h3, h4, h5,
 
 .navbar-brand {
   font-weight: 800;
-  font-size: 20px; }
+  font-size: 20px;}
 
 .hero-wrap {
   width: 100%;
@@ -8674,7 +8675,7 @@ h1, h2, h3, h4, h5,
           display: inline-block;
           background: #fff;
           color: #000;
-         
+
           padding: 2px 5px; }
           @media (min-width: 992px) {
             .owl-carousel.home-slider .slider-item .slider-text .subheading {
