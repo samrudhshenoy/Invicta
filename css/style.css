@@ -2712,7 +2712,7 @@ textarea.form-control.is-invalid {
 }
 
 .btn {
-  color: #fff !important;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
   padding: 20px;
@@ -11860,7 +11860,7 @@ h5,
     color: white;
     background: transparent;
     border: 2px solid #30D5C8;
-    transition: ease-out 0.4s;
+    transition: ease-out 0.2s;
 }
 
 .btn.btn-primary:hover {
