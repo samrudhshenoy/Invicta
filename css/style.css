@@ -2715,12 +2715,10 @@ textarea.form-control.is-invalid {
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
-  background: #ed3330;
   padding: 20px;
   border-radius: 0px;
   display: inline-block;
   border: none;
-  transition: all 0.4s ease 0s;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2732,9 +2730,7 @@ textarea.form-control.is-invalid {
 }
 
 .btn:hover {
-  background: #434343;
-  letter-spacing: 1px;
-  transition: all 0.4s ease 0s;
+
 }
 
 .btn:focus,
@@ -11859,22 +11855,17 @@ h5,
     background: #30D5C8;
 }
 
-.btn:hover,
-.btn:active,
-.btn:focus {
-    outline: none;
-}
-
 .btn.btn-primary {
     color: white;
     background: transparent;
     border: 2px solid #30D5C8;
+    transition: ease-out 0.4s;
 }
 
 .btn.btn-primary:hover {
     border: 2px solid #30D5C8;
-    background: #30D5C8;
     color: white;
+    box-shadow: inset 150px 0px 0px 0px #30D5C8;
 }
 
 .btn.btn-white {
