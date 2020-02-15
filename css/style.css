@@ -11338,7 +11338,8 @@ h5,
 }
 
 .ftco-navbar-light.scrolled .navbar-brand {
-    color: white;
+    color: black;
+    background: white;
 }
 
 .navbar-brand {
@@ -12686,7 +12687,7 @@ h5,
 }
 
 .table tbody tr td.quantity {
-    background-color: black;
+    background-color: white;
     width: 20%;
 }
 
@@ -12698,13 +12699,13 @@ h5,
 }
 
 .table tbody tr td.product-name {
-    color: white;
+    color: black;
     width: 30%;
 }
 
 .table tbody tr td.product-name h3 {
     font-size: 14px;
-    color: white;
+    color: black;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 700;
@@ -12712,7 +12713,7 @@ h5,
 
 .table tbody tr td.total,
 .table tbody tr td.price {
-    color: white;
+    color: black;
 }
 
 .cart-wrap .btn-primary {
@@ -12738,7 +12739,7 @@ h5,
 
 .cart-total p {
     width: 100%;
-    color=white;
+    color: white;
     display: block;
 }
 
@@ -13722,7 +13723,7 @@ textarea.form-control {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
     opacity: 0;
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
