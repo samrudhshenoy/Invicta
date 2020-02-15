@@ -8930,7 +8930,7 @@ button.bg-dark:focus {
 
 .mb-3,
 .my-3 {
-    background-color: white;
+    background-color: transparent;
     margin-bottom: 1rem !important;
 }
 
@@ -11390,7 +11390,7 @@ h5,
     text-transform: uppercase;
 }
 
-.hero-wrap .slider-text .btn-primary {
+.hero-wrap .slider-text .-primary {
     border: 1px solid rgba(255, 255, 255, 0.4);
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -11398,7 +11398,7 @@ h5,
     border-radius: 30px;
 }
 
-.hero-wrap .slider-text .btn-primary:hover,
+.hero-wrap .slider-text .-primary:hover,
 .hero-wrap .slider-text .btn-primary:focus {
     background: #fff !important;
     color: #000000;
