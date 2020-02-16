@@ -2717,7 +2717,7 @@ textarea.form-control.is-invalid {
   text-decoration: none;
   padding: 20px;
   border-radius: 0px;
-  display: inline-block;
+  /* display: inline-block; */
   border: none;
 }
 
@@ -11859,13 +11859,14 @@ h5,
     color: white;
     background: transparent;
     border: 2px solid #30D5C8;
-    transition: ease-out 0.2s;
+    box-shadow: inset 0px 0px #30D5C8;
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 .btn.btn-primary:hover {
     border: 2px solid #30D5C8;
     color: white;
-    box-shadow: inset 150px 0px 0px 0px #30D5C8;
+    box-shadow: inset -125px -55px #30D5C8;
 }
 
 .btn.btn-white {
