@@ -8951,7 +8951,7 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4 {
-    
+
     margin-bottom: 1.5rem !important;
 }
 
@@ -11867,7 +11867,7 @@ h5,
 .btn.btn-primary:hover {
     border: 2px solid #30D5C8;
     color: white;
-    box-shadow: inset -125px -55px #30D5C8;
+    box-shadow: inset -135px 0px #30D5C8;
 }
 
 .btn.btn-white {
