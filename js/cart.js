@@ -1,19 +1,31 @@
-// if (document.readyState == "loading") {
-//     document.addEventListener("DOMContentLoaded", ready);
-// } else {
-//     ready();
-// }
+if (document.readyState == "loading") {
+    document.addEventListener("DOMContentLoaded", ready);
+} else {
+    ready();
+}
 
-// function ready() {
-//     var itemsInCart = document.getElementsByClassName("text-center");
-//     document.getElementById("myText").innerHTML = itemsInCart;
-//     var removeCartItemButtons = document.getElementsByClassName("product-remove");
-//     console.log(removeCartItemButtons);
-//     for (var i = 0; i < removeCartItemButtons.length; i++) {
-//         var button = removeCartItemButtons[i];
-//         button.addEventListener("click", removeCartItem);
-//     }
-// }
+function ready() {
+    console.log("test");
+    window.onload = function() {
+        var url = document.location.href,
+            params = url.split("?")[1].split("&"),
+            data = {},
+            tmp;
+        for (var i = 0, l = params.length; i < l; i++) {
+            tmp = params[i].split("=");
+            data[tmp[0]] = tmp[1];
+        }
+        document.getElementById("here").innerHTML = data.name;
+    };
+    var itemsInCart = document.getElementsByClassName("text-center");
+    document.getElementById("myText").innerHTML = itemsInCart;
+    var removeCartItemButtons = document.getElementsByClassName("product-remove");
+    console.log(removeCartItemButtons);
+    for (var i = 0; i < removeCartItemButtons.length; i++) {
+        var button = removeCartItemButtons[i];
+        button.addEventListener("click", removeCartItem);
+    }
+}
 
 // function removeCartItem(event) {
 //     var buttonClicked = event.target;
