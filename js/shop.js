@@ -6,6 +6,7 @@ document.getElementById("counter").innerHTML = counter;
 for (var i = 0; i < addCartItems.length; i++) {
     var button = addCartItems[i];
     button.addEventListener("click", function(event) {
+        event.preventDefault();
         console.log("clicked");
         counter++;
         console.log(counter);
