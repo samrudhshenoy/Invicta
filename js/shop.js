@@ -3,6 +3,10 @@ console.log(addCartItems);
 var counter = 0;
 document.getElementById("counter").innerHTML = counter;
 
+$.getJSON("test.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+});
+
 for (var i = 0; i < addCartItems.length; i++) {
     var button = addCartItems[i];
     button.addEventListener("click", function(event) {
