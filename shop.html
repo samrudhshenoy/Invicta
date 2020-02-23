@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="js/shop.js" async></script>
-    <script src="js/cart.js" async></script>
     <link rel='icon' href='images/favicon4.png' type="">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -76,8 +75,7 @@
                     </li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i
-                                class="fa fa-shopping-cart" style="font-size:12px;color:white"></i>[0]</a></li>
+                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i class="fa fa-shopping-cart"  style="font-size:12px;color:white">[<b id="counter"></b>]</i></a></li>
 
                 </ul>
             </div>
@@ -186,107 +184,104 @@
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title">
                                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Men's Apparel
-                                 </a>
+                            
                                             </h4>
                                         </div>
                                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                             <div class="panel-body">
                                                 <ul>
                                                     <li><a href="#">Tuxedos</a></li>
-                                                    <li><a href="#">Blazers</a></li>
-                                                    <li><a href="#">Shirts</a></li>
-                                                    <li><a href="#">Slacks</a></li>
-                                                    <li><a href="#">Shoes</a></li>
-                                                    <li><a href="#">Ties</a></li>
-                                                    <li><a href="#">Watches</a></li>
+                                                <li><a href="#">Blazers</a></li>
+                                                <li><a href="#">Shirts</a></li>
+                                                <li><a href="#">Slacks</a></li>
+                                                <li><a href="#">Shoes</a></li>
+                                                <li><a href="#">Ties</a></li>
+                                                <li><a href="#">Watches</a></li>
                                                 </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading" role="tab" id="headingTwo">
-                                            <h4 class="panel-title">
-                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Women's Apparel
-                                 </a>
-                                            </h4>
-                                        </div>
-                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                            <div class="panel-body">
-                                                <ul>
-                                                    <li><a href="#">Blazers</a></li>
-                                                    <li><a href="#">Blouses</a></li>
-                                                    <li><a href="#">Shirts</a></li>
-                                                    <li><a href="#">Slacks</a></li>
-                                                    <li><a href="#">Skirts</a></li>
-                                                    <li><a href="#">Flats</a></li>
-                                                    <li><a href="#">Heels</a></li>
-                                                    <li><a href="#">Jewelry</a></li>
-                                                </ul>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="sidebar-box-2">
-                                    <h2 class="heading">Price Range</h2>
-                                    <form method="post" class="colorlib-form-2">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="guests">Price from:</label>
-                                                    <div class="form-field">
-                                                        <i class="icon icon-arrow-down3"></i>
-                                                        <select name="people" id="people" class="form-control">
-		                        <option value="#">0</option>
-		                        <option value="#">5</option>
-		                        <option value="#">10</option>
-		                        <option value="#">15</option>
-		                        <option value="#">20</option>
-					<option value="#">25</option>
-		                        <option value="#">30</option>
-		                        <option value="#">35</option>
-		                        <option value="#">40</option>
-					<option value="#">45</option>
-					<option value="#">50</option>
-		                        <option value="#">55</option>
-		                        <option value="#">60</option>
-		                        <option value="#">65</option>
-		                        <option value="#">70</option>
-		                      </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="guests">Price to:</label>
-                                                    <div class="form-field">
-                                                        <i class="icon icon-arrow-down3"></i>
-                                                        <select name="people" id="people" class="form-control">
-		                        <option value="#">0</option>
-		                        <option value="#">5</option>
-		                        <option value="#">10</option>
-		                        <option value="#">15</option>
-		                        <option value="#">20</option>
-					<option value="#">25</option>
-		                        <option value="#">30</option>
-		                        <option value="#">35</option>
-		                        <option value="#">40</option>
-					<option value="#">45</option>
-					<option value="#">50</option>
-		                        <option value="#">55</option>
-		                        <option value="#">60</option>
-		                        <option value="#">65</option>
-		                        <option value="#">70</option>
-		                      </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </form>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab" id="headingTwo">
+                                        <h4 class="panel-title">
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Women's Apparel
+                                        </h4>
+                                    </div>
+                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                        <div class="panel-body">
+                                            <ul>
+                                                <li><a href="#">Blazers</a></li>
+                                            <li><a href="#">Blouses</a></li>
+                                            <li><a href="#">Shirts</a></li>
+                                            <li><a href="#">Slacks</a></li>
+                                            <li><a href="#">Skirts</a></li>
+                                            <li><a href="#">Flats</a></li>
+                                            <li><a href="#">Heels</a></li>
+                                            <li><a href="#">Jewelry</a></li>
+                                            </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="sidebar-box-2">
+                            <h2 class="heading">Price Range</h2>
+                            <form method="post" class="colorlib-form-2">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="guests">Price from:</label>
+                                            <div class="form-field">
+                                                <i class="icon icon-arrow-down3"></i>
+                                                <select name="people" id="people" class="form-control">
+		                        <option value="#">0</option>
+		                        <option value="#">5</option>
+		                        <option value="#">10</option>
+		                        <option value="#">15</option>
+		                        <option value="#">20</option>
+					<option value="#">25</option>
+		                        <option value="#">30</option>
+		                        <option value="#">35</option>
+		                        <option value="#">40</option>
+					<option value="#">45</option>
+					<option value="#">50</option>
+		                        <option value="#">55</option>
+		                        <option value="#">60</option>
+		                        <option value="#">65</option>
+		                        <option value="#">70</option>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="guests">Price to:</label>
+                                            <div class="form-field">
+                                                <i class="icon icon-arrow-down3"></i>
+                                                <select name="people" id="people" class="form-control">
+		                        <option value="#">0</option>
+		                        <option value="#">5</option>
+		                        <option value="#">10</option>
+		                        <option value="#">15</option>
+		                        <option value="#">20</option>
+					<option value="#">25</option>
+		                        <option value="#">30</option>
+		                        <option value="#">35</option>
+		                        <option value="#">40</option>
+					<option value="#">45</option>
+					<option value="#">50</option>
+		                        <option value="#">55</option>
+		                        <option value="#">60</option>
+		                        <option value="#">65</option>
+		                        <option value="#">70</option>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </section>
 
     <section class="ftco-gallery">
@@ -437,8 +432,6 @@
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
 
 </body>
