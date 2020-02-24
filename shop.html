@@ -75,7 +75,7 @@
                     </li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i class="fa fa-shopping-cart"  style="font-size:12px;color:white">[<b id="counter"></b>]</i></a></li>
+                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i class="fa fa-shopping-cart"  style="font-size:12px;color:white">[<t id="picked"></t>]</i></a></li>
 
                 </ul>
             </div>
@@ -118,12 +118,18 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <h3><a href="#">Black Tuxedo</a></h3>
+                                    <h3>
+                                        <a href="#">
+                                            <p id="cloth1"></p>
+                                        </a>
+                                    </h3>
                                     <div class="pricing">
-                                        <p class="price"><span>$120.00</span></p>
+                                        <p class="price">$
+                                            <t id="price1"></t>.00
+                                        </p>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                                        <button class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></button>
                                         <a href="checkout.html" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
                                     </p>
                                 </div>
@@ -148,12 +154,19 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <h3><a href="#">Not Black Tuxedo</a></h3>
+                                    <h3>
+                                        <a href="#">
+                                            <p id="cloth2"></p>
+                                        </a>
+                                    </h3>
                                     <div class="pricing">
-                                        <p class="price"><span>$120.00</span></p>
+                                        <p class="price">
+                                            $
+                                            <t id="price2"></t>.00
+                                        </p>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                                        <a id="2" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
                                         <a href="checkout.html" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
                                     </p>
                                 </div>
