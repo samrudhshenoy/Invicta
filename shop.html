@@ -75,7 +75,7 @@
                     </li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i class="fa fa-shopping-cart"  style="font-size:12px;color:white">[<b id="counter"></b>]</i></a></li>
+                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i class="fa fa-shopping-cart"  style="font-size:12px;color:white">[<t id="picked"></t>]</i></a></li>
 
                 </ul>
             </div>
@@ -118,9 +118,15 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <h3><a href="#">Black Tuxedo</a></h3>
+                                    <h3>
+                                        <a href="#">
+                                            <p id="cloth1"></p>
+                                        </a>
+                                    </h3>
                                     <div class="pricing">
-                                        <p class="price"><span>$120.00</span></p>
+                                        <p class="price">$
+                                            <t id="price1"></t>.00
+                                        </p>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
                                         <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
@@ -148,12 +154,19 @@
                                             </p>
                                         </div>
                                     </div>
-                                    <h3><a href="#">Not Black Tuxedo</a></h3>
+                                    <h3>
+                                        <a href="#">
+                                            <p id="cloth2"></p>
+                                        </a>
+                                    </h3>
                                     <div class="pricing">
-                                        <p class="price"><span>$120.00</span></p>
+                                        <p class="price">
+                                            $
+                                            <t id="price2"></t>.00
+                                        </p>
                                     </div>
                                     <p class="bottom-area d-flex px-3">
-                                        <a href="#" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
+                                        <a id="2" class="add-to-cart text-center py-2 mr-1"><span>Add to cart <i class="ion-ios-add ml-1"></i></span></a>
                                         <a href="checkout.html" class="buy-now text-center py-2">Buy now<span><i class="ion-ios-cart ml-1"></i></span></a>
                                     </p>
                                 </div>
@@ -183,56 +196,54 @@
                                     <div class="panel panel-default">
                                         <div class="panel-heading" role="tab" id="headingOne">
                                             <h4 class="panel-title">
-                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Men's Apparel
-                            
-                                            </h4>
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Men's Apparel</a> </h4>
                                         </div>
                                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
                                             <div class="panel-body">
                                                 <ul>
                                                     <li><a href="#">Tuxedos</a></li>
-                                                <li><a href="#">Blazers</a></li>
-                                                <li><a href="#">Shirts</a></li>
-                                                <li><a href="#">Slacks</a></li>
-                                                <li><a href="#">Shoes</a></li>
-                                                <li><a href="#">Ties</a></li>
-                                                <li><a href="#">Watches</a></li>
+                                                    <li><a href="#">Blazers</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Slacks</a></li>
+                                                    <li><a href="#">Shoes</a></li>
+                                                    <li><a href="#">Ties</a></li>
+                                                    <li><a href="#">Watches</a></li>
                                                 </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Women's Apparel</a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                            <div class="panel-body">
+                                                <ul>
+                                                    <li><a href="#">Blazers</a></li>
+                                                    <li><a href="#">Blouses</a></li>
+                                                    <li><a href="#">Shirts</a></li>
+                                                    <li><a href="#">Slacks</a></li>
+                                                    <li><a href="#">Skirts</a></li>
+                                                    <li><a href="#">Flats</a></li>
+                                                    <li><a href="#">Heels</a></li>
+                                                    <li><a href="#">Jewelry</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab" id="headingTwo">
-                                        <h4 class="panel-title">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Women's Apparel
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                                        <div class="panel-body">
-                                            <ul>
-                                                <li><a href="#">Blazers</a></li>
-                                            <li><a href="#">Blouses</a></li>
-                                            <li><a href="#">Shirts</a></li>
-                                            <li><a href="#">Slacks</a></li>
-                                            <li><a href="#">Skirts</a></li>
-                                            <li><a href="#">Flats</a></li>
-                                            <li><a href="#">Heels</a></li>
-                                            <li><a href="#">Jewelry</a></li>
-                                            </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar-box-2">
-                            <h2 class="heading">Price Range</h2>
-                            <form method="post" class="colorlib-form-2">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="guests">Price from:</label>
-                                            <div class="form-field">
-                                                <i class="icon icon-arrow-down3"></i>
-                                                <select name="people" id="people" class="form-control">
+                                <div class="sidebar-box-2">
+                                    <h2 class="heading">Price Range</h2>
+                                    <form method="post" class="colorlib-form-2">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="guests">Price from:</label>
+                                                    <div class="form-field">
+                                                        <i class="icon icon-arrow-down3"></i>
+                                                        <select name="people" id="people" class="form-control">
 		                        <option value="#">0</option>
 		                        <option value="#">5</option>
 		                        <option value="#">10</option>

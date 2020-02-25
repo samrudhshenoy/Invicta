@@ -11,7 +11,7 @@
             "sys": { "id": "2" },
             "fields": {
                 "title": "Not Black Tuxedo",
-                "price": 120,
+                "price": 120.0,
                 "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         }
