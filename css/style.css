@@ -722,7 +722,7 @@ pre code {
 
 .col-md-12 {
     position: relative;
-    padding-top: 17px;
+    padding-top: 0px;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
@@ -13173,7 +13173,6 @@ textarea.form-control {
 
 .ftco-choose .divider-one {
     height: 700px;
-    width: 370px;
 }
 
 .ftco-choose .divider-two {
@@ -13192,11 +13191,6 @@ textarea.form-control {
 
 .ftco-choose .full-wrap {
     height: 350px;
-}
-
-.ftco-choose .full-wrap2 {
-    height: 320px;
-    width: 370px;
 }
 
 .ftco-choose .text {
