@@ -5,8 +5,6 @@
     <title>Invicta - Cart</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="js/cart.js" async></script>
-    <script src="js/shop.js" async></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -74,8 +72,8 @@
                     </li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i
-                                class="fa fa-shopping-cart" style="font-size:12px;color:white"></i>[0]</a></li>
+                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i class="fa fa-shopping-cart"  style="font-size:12px;color:white">[<t id="picked"></t>]</i></a></li>
+
 
                 </ul>
             </div>
@@ -304,39 +302,14 @@
     <script src="js/main.js"></script>
 
     <script>
-        $(document).ready(function() {
+        var picked = [];
+        document.getElementById("picked").innerHTML = picked.length;
 
-            var quantitiy = 0;
-            $('.quantity-right-plus').click(function(e) {
-
-                // Stop acting like a button
-                e.preventDefault();
-                // Get the field name
-                var quantity = parseInt($('#quantity').val());
-
-                // If is not undefined
-
-                $('#quantity').val(quantity + 1);
-
-                // Increment
-
-            });
-
-            $('.quantity-left-minus').click(function(e) {
-                // Stop acting like a button
-                e.preventDefault();
-                // Get the field name
-                var quantity = parseInt($('#quantity').val());
-
-                // If is not undefined
-
-                // Increment
-                if (quantity > 0) {
-                    $('#quantity').val(quantity - 1);
-                }
-            });
-
-        });
+        var length = localStorage.getItem("cart");
+        // for (var i = 0; i < length; i++) { 
+        //     picked.push(localStorage[i])
+        // }
+        document.getElementById("picked").innerHTML = length;
     </script>
 
 </body>
