@@ -130,8 +130,8 @@
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
                 <div class="product d-flex flex-column">
-                  <a href="#" class="img-prod"
-                    ><img class="img-fluid" src="images/product-1.jpg" />
+                  <a href="#" class="img-prod">
+                    <img class="img-fluid" id="pic1" />
                     <div class="overlay"></div>
                   </a>
                                 <div class="text py-3 pb-4 px-3">
@@ -175,8 +175,7 @@
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-4 ftco-animate d-flex">
                         <div class="product d-flex flex-column">
-                            <a href="#" class="img-prod"><img class="img-fluid" src="images/product-2.jpg" />
-                            </a>
+                            <a href="#" class="img-prod"> </a>
                             <div class="text py-3 pb-4 px-3">
                                 <div class="d-flex">
                                     <div class="cat">
@@ -583,6 +582,10 @@
             document.getElementById("cloth1").innerHTML = cloth1;
             var price1 = data.items[0].fields.price;
             document.getElementById("price1").innerHTML = price1;
+
+            var pic1 = data.items[0].fields.image.fields.file.url;
+            console.document.getElementById("pic1").innerHTML = pic1;
+
             var cloth2 = data.items[1].fields.title;
             document.getElementById("cloth2").innerHTML = cloth2;
             var price2 = data.items[1].fields.price;

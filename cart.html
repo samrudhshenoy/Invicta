@@ -437,7 +437,9 @@
             var cloth1 = data.items[0].fields.title;
             document.getElementById("cloth1").innerHTML = cloth1;
             var price1 = data.items[0].fields.price;
-            document.getElementById("price1").innerHTML = price1;
+            document.getElementById("pic1").src = price1;
+            var pic1 = data.items[0].fields.image.fields.file.url;
+            document.getElementById("price1").src = price1;
             var cloth2 = data.items[1].fields.title;
             document.getElementById("cloth2").innerHTML = cloth2;
             var price2 = data.items[1].fields.price;
