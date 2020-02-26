@@ -2729,8 +2729,6 @@ textarea.form-control.is-invalid {
     }
 }
 
-.btn:hover {}
-
 .btn:focus,
 .btn.focus {
     outline: 0;
@@ -3472,6 +3470,7 @@ input[type="button"].btn-block {
 
 input[type="text"],
 textarea {
+    transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -12089,7 +12088,7 @@ h3,
 }
 
 .nineteen {
-    backg1round: #fff;
+    background: #fff;
 }
 
 .twenty {

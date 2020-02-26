@@ -26,12 +26,12 @@ function ready() {
     }
 }
 
-// function removeCartItem(event) {
-//     var buttonClicked = event.target;
-//     buttonClicked.parentElement.parentElement.remove();
-//     updateItemsInCart();
-//     updateCartTotal();
-// }
+function removeCartItem(event) {
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.parentElement.remove();
+    updateItemsInCart();
+    updateCartTotal();
+}
 
 // function updateCartTotal() {
 //     var cartItemContainer = document.getElementsByClassName("table")[0];
