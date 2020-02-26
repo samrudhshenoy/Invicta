@@ -3,15 +3,342 @@
             "sys": { "id": "1" },
             "fields": {
                 "title": "Black Tuxedo",
-                "price": 120,
-                "image": { "fields": { "file": { "url": "./images/product-1.jpeg" } } }
+                "price": 19.99,
+                "gender": "male",
+                "categ": "Tuxedos",
+                "image": { "fields": { "file": { "url": "images/product-1.jpeg" } } }
             }
         },
         {
             "sys": { "id": "2" },
             "fields": {
-                "title": "Not Black Tuxedo",
-                "price": 120,
+                "title": "White Tuxedo",
+                "price": 19.99,
+                "gender": "male",
+                "categ": "Tuxedos",
+                "image": { "fields": { "file": { "url": "images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "3" },
+            "fields": {
+                "title": "Black Blazer",
+                "price": 11.99,
+                "gender": "male",
+                "categ": "Blazers",
+                "image": { "fields": { "file": { "url": "images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "4" },
+            "fields": {
+                "title": "Gray Blazer",
+                "price": 11.99,
+                "gender": "male",
+                "categ": "Blazers",
+                "image": { "fields": { "file": { "url": "images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "5" },
+            "fields": {
+                "title": "White Blazer",
+                "price": 11.99,
+                "gender": "male",
+                "categ": "Blazers",
+                "image": { "fields": { "file": { "url": "images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "6" },
+            "fields": {
+                "title": "Cuff Links",
+                "price": 0.99,
+                "gender": "male",
+                "categ": "Blazers",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "7" },
+            "fields": {
+                "title": "Pocket Square",
+                "price": 0.99,
+                "gender": "male",
+                "categ": "Blazers",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "8" },
+            "fields": {
+                "title": "Black Shirt",
+                "price": 7.99,
+                "gender": "male",
+                "categ": "Shirts",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "9" },
+            "fields": {
+                "title": "White Shirt",
+                "price": 7.99,
+                "gender": "male",
+                "categ": "Shirts",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "10" },
+            "fields": {
+                "title": "Light Blue Shirt",
+                "price": 7.99,
+                "gender": "male",
+                "categ": "Shirts",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "11" },
+            "fields": {
+                "title": "Black Slacks",
+                "price": 6.99,
+                "gender": "male",
+                "categ": "Slacks",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "12" },
+            "fields": {
+                "title": "White Slacks",
+                "price": 6.99,
+                "gender": "male",
+                "categ": "Slacks",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "13" },
+            "fields": {
+                "title": "Gray Slacks",
+                "price": 6.99,
+                "gender": "male",
+                "categ": "Slacks",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "14" },
+            "fields": {
+                "title": "Black Shoes",
+                "price": 5.99,
+                "gender": "male",
+                "categ": "Shoes",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "15" },
+            "fields": {
+                "title": "Dark Brown Shoes",
+                "price": 5.99,
+                "gender": "male",
+                "categ": "Shoes",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "16" },
+            "fields": {
+                "title": "Brown Shoes",
+                "price": 5.99,
+                "gender": "male",
+                "categ": "Shoes",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "17" },
+            "fields": {
+                "title": "Black Tie",
+                "price": 1.99,
+                "gender": "male",
+                "categ": "Ties",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "18" },
+            "fields": {
+                "title": "Blue Tie",
+                "price": 1.99,
+                "gender": "male",
+                "categ": "Ties",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "19" },
+            "fields": {
+                "title": "Red Tie",
+                "price": 1.99,
+                "gender": "male",
+                "categ": "Ties",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "20" },
+            "fields": {
+                "title": "White Tie",
+                "price": 1.99,
+                "gender": "male",
+                "categ": "Ties",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "21" },
+            "fields": {
+                "title": "Black Bowtie",
+                "price": 1.99,
+                "gender": "male",
+                "categ": "Ties",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "22" },
+            "fields": {
+                "title": "Blue Bowtie",
+                "price": 1.99,
+                "gender": "male",
+                "categ": "Ties",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "23" },
+            "fields": {
+                "title": "Red Bowtie",
+                "price": 1.99,
+                "gender": "male",
+                "categ": "Ties",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "24" },
+            "fields": {
+                "title": "White Bowtie",
+                "price": 1.99,
+                "gender": "male",
+                "categ": "Ties",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "25" },
+            "fields": {
+                "title": "Tie Clip",
+                "price": 0.99,
+                "gender": "male",
+                "categ": "Ties",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+
+        {
+            "sys": { "id": "26" },
+            "fields": {
+                "title": "Light Blue Blouse",
+                "price": 6.99,
+                "gender": "female",
+                "categ": "Blouses",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "27" },
+            "fields": {
+                "title": "Red Blouse",
+                "price": 6.99,
+                "gender": "female",
+                "categ": "Blouses",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "28" },
+            "fields": {
+                "title": "White Blouse",
+                "price": 6.99,
+                "gender": "female",
+                "categ": "Blouses",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+
+        {
+            "sys": { "id": "29" },
+            "fields": {
+                "title": "Black Skirt",
+                "price": 5.99,
+                "gender": "female",
+                "categ": "Skirts",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "30" },
+            "fields": {
+                "title": "White Skirt",
+                "price": 5.99,
+                "gender": "female",
+                "categ": "Skirts",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "31" },
+            "fields": {
+                "title": "Gray Skirt",
+                "price": 5.99,
+                "gender": "female",
+                "categ": "Skirts",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+
+        {
+            "sys": { "id": "32" },
+            "fields": {
+                "title": "Black Leather Heels",
+                "price": 5.99,
+                "gender": "female",
+                "categ": "Heels",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "33" },
+            "fields": {
+                "title": "Brown Leather Heels",
+                "price": 5.99,
+                "gender": "female",
+                "categ": "Heels",
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
+            }
+        },
+        {
+            "sys": { "id": "34" },
+            "fields": {
+                "title": "Tan Fabric Heels",
+                "price": 5.99,
+                "gender": "female",
+                "categ": "Heels",
                 "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         }

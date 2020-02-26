@@ -5,7 +5,6 @@ if (document.readyState == "loading") {
 }
 
 function ready() {
-    console.log("test");
     window.onload = function() {
         var url = document.location.href,
             params = url.split("?")[1].split("&"),
@@ -27,12 +26,12 @@ function ready() {
     }
 }
 
-// function removeCartItem(event) {
-//     var buttonClicked = event.target;
-//     buttonClicked.parentElement.parentElement.remove();
-//     updateItemsInCart();
-//     updateCartTotal();
-// }
+function removeCartItem(event) {
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.parentElement.remove();
+    updateItemsInCart();
+    updateCartTotal();
+}
 
 // function updateCartTotal() {
 //     var cartItemContainer = document.getElementsByClassName("table")[0];

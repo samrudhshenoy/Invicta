@@ -2729,8 +2729,6 @@ textarea.form-control.is-invalid {
     }
 }
 
-.btn:hover {}
-
 .btn:focus,
 .btn.focus {
     outline: 0;
@@ -2776,13 +2774,13 @@ fieldset:disabled a.btn {
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
-    background: rgba(48,213,200, 0.4);
+    background: rgba(48, 213, 200, 0.4);
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    background: rgba(48,213,200, 0.4);
+    background: rgba(48, 213, 200, 0.4);
 }
 
 .btn-primary2 {
@@ -3472,6 +3470,7 @@ input[type="button"].btn-block {
 
 input[type="text"],
 textarea {
+    transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
@@ -12014,6 +12013,142 @@ h3,
     -webkit-transition: all 0.3s ease;
     -ms-transition: all 0.3s ease;
     transition: all 0.3s ease;
+}
+
+.one {
+    background: #fff;
+}
+
+.two {
+    background: #fff;
+}
+
+.three {
+    background: #fff;
+}
+
+.four {
+    background: #fff;
+}
+
+.five {
+    background: #fff;
+}
+
+.six {
+    background: #fff;
+}
+
+.seven {
+    background: #fff;
+}
+
+.eight {
+    background: #fff;
+}
+
+.nine {
+    background: #fff;
+}
+
+.ten {
+    background: #fff;
+}
+
+.eleven {
+    background: #fff;
+}
+
+.twelve {
+    background: #fff;
+}
+
+.thirteen {
+    background: #fff;
+}
+
+.fourteen {
+    background: #fff;
+}
+
+.fifteen {
+    background: #fff;
+}
+
+.sixteen {
+    background: #fff;
+}
+
+.seventeen {
+    background: #fff;
+}
+
+.eighteen {
+    background: #fff;
+}
+
+.nineteen {
+    background: #fff;
+}
+
+.twenty {
+    background: #fff;
+}
+
+.twentyone {
+    background: #fff;
+}
+
+.twentytwo {
+    background: #fff;
+}
+
+.twentythree {
+    background: #fff;
+}
+
+.twentyfour {
+    background: #fff;
+}
+
+.twentyfive {
+    background: #fff;
+}
+
+.twentysix {
+    background: #fff;
+}
+
+.twentyseven {
+    background: #fff;
+}
+
+.twentyeight {
+    background: #fff;
+}
+
+.twentynine {
+    background: #fff;
+}
+
+.thirty {
+    background: #fff;
+}
+
+.thirtyone {
+    background: #fff;
+}
+
+.thirtytwo {
+    background: #fff;
+}
+
+.thirtythree {
+    background: #fff;
+}
+
+.thirtyfour {
+    background: #fff;
 }
 
 @media (max-width: 991.98px) {
