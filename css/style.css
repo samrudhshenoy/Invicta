@@ -11036,7 +11036,7 @@ h3,
 .h3 {
   line-height: 1.5;
   font-weight: 400;
-  color: white;
+  color: black;
 }
 
 .text-primary {
@@ -13038,7 +13038,7 @@ textarea.form-control {
 
 .ftco-choose .divider-one {
     height: 700px;
-    width: 352px;
+    width: 370px;
 }
 
 .ftco-choose .divider-two {
@@ -13061,7 +13061,7 @@ textarea.form-control {
 
 .ftco-choose .full-wrap2 {
     height: 320px;
-    width: 351px;
+    width: 370px;
 }
 
 .ftco-choose .text {
@@ -13366,7 +13366,7 @@ textarea.form-control {
 .user-img {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left;
 }
 
 .ftco-services .services {
@@ -13396,7 +13396,7 @@ textarea.form-control {
 
 .ftco-services .services .icon span {
     font-size: 70px;
-    color: white;
+    color: #30d5c8;
 }
 
 .ftco-services .services .media-body {
