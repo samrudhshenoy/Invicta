@@ -512,8 +512,7 @@ mark,
 }
 
 .img-fluid {
-    max-width: 80%;
-    height: auto;
+  height: auto;
 }
 
 .img-thumbnail {
@@ -11607,7 +11606,7 @@ h3,
 }
 
 .owl-carousel.home-slider .slider-item .slider-text .one-third {
-    max-width: 38%;
+    max-width: 34%;
     right: 250px;
     position: relative;
     z-index: -1;
