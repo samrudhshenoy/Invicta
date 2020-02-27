@@ -512,6 +512,11 @@ mark,
 }
 
 .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-fluid2 {
   height: auto;
 }
 
@@ -11357,7 +11362,6 @@ h3,
 .navbar-brand {
     font-weight: 600;
     font-size: 30px;
-    font-family: 'Optima';
 }
 
 .hero-wrap {
@@ -11600,7 +11604,7 @@ h3,
     .owl-carousel.home-slider .slider-item .slider-text {
         text-align: center;
     }
-    .owl-carousel.home-slider .slider-item .img-fluid {
+    .owl-carousel.home-slider .slider-item .img-fluid2 {
         display: none;
     }
 }
