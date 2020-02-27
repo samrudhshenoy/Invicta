@@ -6,7 +6,7 @@
                 "price": 19.99,
                 "gender": "male",
                 "categ": "Tuxedos",
-                "image": { "fields": { "file": { "url": "images/product-1.jpg" } } }
+                "image": { "fields": { "file": { "url": "images/product-1.png" } } }
             }
         },
         {
