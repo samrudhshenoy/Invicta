@@ -6,7 +6,7 @@
                 "price": 19.99,
                 "gender": "male",
                 "categ": "Tuxedos",
-                "image": { "fields": { "file": { "url": "images/product-1.png" } } }
+                "image": { "fields": { "file": { "url": "images/product-1.jpg" } } }
             }
         },
         {
@@ -26,7 +26,7 @@
                 "price": 11.99,
                 "gender": "male",
                 "categ": "Blazers",
-                "image": { "fields": { "file": { "url": "images/men/blazers/black.jpg" } } }
+                "image": { "fields": { "file": { "url": "images/product-2.jpeg" } } }
             }
         },
         {
@@ -36,7 +36,7 @@
                 "price": 11.99,
                 "gender": "male",
                 "categ": "Blazers",
-                "image": { "fields": { "file": { "url": "images/men/blazers/gray.jpg" } } }
+                "image": { "fields": { "file": { "url": "images/product-2.jpeg" } } }
             }
         },
         {
@@ -46,7 +46,7 @@
                 "price": 11.99,
                 "gender": "male",
                 "categ": "Blazers",
-                "image": { "fields": { "file": { "url": "images/men/blazers/white.jpg" } } }
+                "image": { "fields": { "file": { "url": "images/product-2.jpeg" } } }
             }
         },
         {
@@ -56,7 +56,7 @@
                 "price": 0.99,
                 "gender": "male",
                 "categ": "Blazers",
-                "image": { "fields": { "file": { "url": "images/men/blazers/cufflinks.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -66,7 +66,7 @@
                 "price": 0.99,
                 "gender": "male",
                 "categ": "Blazers",
-                "image": { "fields": { "file": { "url": "images/men/blazers/pocketsquare.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -76,7 +76,7 @@
                 "price": 7.99,
                 "gender": "male",
                 "categ": "Shirts",
-                "image": { "fields": { "file": { "url": "images/men/shirts/black.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -86,7 +86,7 @@
                 "price": 7.99,
                 "gender": "male",
                 "categ": "Shirts",
-                "image": { "fields": { "file": { "url": "images/men/shirts/white.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -96,7 +96,7 @@
                 "price": 7.99,
                 "gender": "male",
                 "categ": "Shirts",
-                "image": { "fields": { "file": { "url": "images/men/shirts/blue.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -106,7 +106,7 @@
                 "price": 6.99,
                 "gender": "male",
                 "categ": "Slacks",
-                "image": { "fields": { "file": { "url": "images/men/slacks/black.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -116,7 +116,7 @@
                 "price": 6.99,
                 "gender": "male",
                 "categ": "Slacks",
-                "image": { "fields": { "file": { "url": "images/men/slacks/white.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -126,7 +126,7 @@
                 "price": 6.99,
                 "gender": "male",
                 "categ": "Slacks",
-                "image": { "fields": { "file": { "url": "images/men/slacks/gray.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -136,7 +136,7 @@
                 "price": 5.99,
                 "gender": "male",
                 "categ": "Shoes",
-                "image": { "fields": { "file": { "url": "images/men/shoes/black.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -146,7 +146,7 @@
                 "price": 5.99,
                 "gender": "male",
                 "categ": "Shoes",
-                "image": { "fields": { "file": { "url": "images/men/shoes/darkbrown.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -156,7 +156,7 @@
                 "price": 5.99,
                 "gender": "male",
                 "categ": "Shoes",
-                "image": { "fields": { "file": { "url": "images/men/shoes/brown.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -166,7 +166,7 @@
                 "price": 1.99,
                 "gender": "male",
                 "categ": "Ties",
-                "image": { "fields": { "file": { "url": "images/men/ties/black.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -176,7 +176,7 @@
                 "price": 1.99,
                 "gender": "male",
                 "categ": "Ties",
-                "image": { "fields": { "file": { "url": "images/men/ties/blue.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -186,7 +186,7 @@
                 "price": 1.99,
                 "gender": "male",
                 "categ": "Ties",
-                "image": { "fields": { "file": { "url": "images/men/ties/red.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -196,7 +196,7 @@
                 "price": 1.99,
                 "gender": "male",
                 "categ": "Ties",
-                "image": { "fields": { "file": { "url": "images/men/ties/white.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -206,7 +206,7 @@
                 "price": 1.99,
                 "gender": "male",
                 "categ": "Ties",
-                "image": { "fields": { "file": { "url": "images/men/ties/blackbow.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -216,7 +216,7 @@
                 "price": 1.99,
                 "gender": "male",
                 "categ": "Ties",
-                "image": { "fields": { "file": { "url": "images/men/ties/bluebow.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -226,7 +226,7 @@
                 "price": 1.99,
                 "gender": "male",
                 "categ": "Ties",
-                "image": { "fields": { "file": { "url": "images/men/ties/redbow.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -236,7 +236,7 @@
                 "price": 1.99,
                 "gender": "male",
                 "categ": "Ties",
-                "image": { "fields": { "file": { "url": "images/men/ties/whitebow.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -246,7 +246,7 @@
                 "price": 0.99,
                 "gender": "male",
                 "categ": "Ties",
-                "image": { "fields": { "file": { "url": "images/men/ties/tieclip.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
 
@@ -257,7 +257,7 @@
                 "price": 6.99,
                 "gender": "female",
                 "categ": "Blouses",
-                "image": { "fields": { "file": { "url": "images/women/blouses/lightblue.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -267,7 +267,7 @@
                 "price": 6.99,
                 "gender": "female",
                 "categ": "Blouses",
-                "image": { "fields": { "file": { "url": "images/women/blouses/red.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -277,7 +277,7 @@
                 "price": 6.99,
                 "gender": "female",
                 "categ": "Blouses",
-                "image": { "fields": { "file": { "url": "images/women/blouses/white.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
 
@@ -288,7 +288,7 @@
                 "price": 5.99,
                 "gender": "female",
                 "categ": "Skirts",
-                "image": { "fields": { "file": { "url": "images/women/skirts/black.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -298,7 +298,7 @@
                 "price": 5.99,
                 "gender": "female",
                 "categ": "Skirts",
-                "image": { "fields": { "file": { "url": "images/women/skirts/gray.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -308,7 +308,7 @@
                 "price": 5.99,
                 "gender": "female",
                 "categ": "Skirts",
-                "image": { "fields": { "file": { "url": "images/women/skirts/white.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
 
@@ -319,7 +319,7 @@
                 "price": 5.99,
                 "gender": "female",
                 "categ": "Heels",
-                "image": { "fields": { "file": { "url": "images/women/heels/black.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
@@ -329,168 +329,17 @@
                 "price": 5.99,
                 "gender": "female",
                 "categ": "Heels",
-                "image": { "fields": { "file": { "url": "images/women/heels/brown.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         },
         {
             "sys": { "id": "34" },
             "fields": {
-                "title": "Gray Fabric Heels",
+                "title": "Tan Fabric Heels",
                 "price": 5.99,
                 "gender": "female",
                 "categ": "Heels",
-                "image": { "fields": { "file": { "url": "images/women/heels/gray.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "35" },
-            "fields": {
-                "title": "Black Leather Watch",
-                "price": 0.99,
-                "gender": "male",
-                "categ": "Watches",
-                "image": { "fields": { "file": { "url": "images/men/watches/black.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "36" },
-            "fields": {
-                "title": "Brown Leather Watch",
-                "price": 0.99,
-                "gender": "male",
-                "categ": "Watches",
-                "image": { "fields": { "file": { "url": "images/men/watches/brown.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "37" },
-            "fields": {
-                "title": "Tan Leather Watch",
-                "price": 0.99,
-                "gender": "male",
-                "categ": "Watches",
-                "image": { "fields": { "file": { "url": "images/men/watches/tan.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "38" },
-            "fields": {
-                "title": "Black Blazer",
-                "price": 11.99,
-                "gender": "female",
-                "categ": "Blazers",
-                "image": { "fields": { "file": { "url": "images/women/blazers/black.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "39" },
-            "fields": {
-                "title": "Gray Blazer",
-                "price": 11.99,
-                "gender": "female",
-                "categ": "Blazers",
-                "image": { "fields": { "file": { "url": "images/women/blazers/gray.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "40" },
-            "fields": {
-                "title": "White Blazer",
-                "price": 11.99,
-                "gender": "female",
-                "categ": "Blazers",
-                "image": { "fields": { "file": { "url": "images/women/blazers/white.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "41" },
-            "fields": {
-                "title": "Black Shirt",
-                "price": 7.99,
-                "gender": "female",
-                "categ": "Shirts",
-                "image": { "fields": { "file": { "url": "images/women/shirts/black.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "42" },
-            "fields": {
-                "title": "White Shirt",
-                "price": 7.99,
-                "gender": "female",
-                "categ": "Shirts",
-                "image": { "fields": { "file": { "url": "images/women/shirts/white.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "43" },
-            "fields": {
-                "title": "Light Blue Shirt",
-                "price": 7.99,
-                "gender": "female",
-                "categ": "Shirts",
-                "image": { "fields": { "file": { "url": "images/women/shirts/lightblue.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "44" },
-            "fields": {
-                "title": "Black Slacks",
-                "price": 6.99,
-                "gender": "female",
-                "categ": "Slacks",
-                "image": { "fields": { "file": { "url": "images/women/slacks/black.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "45" },
-            "fields": {
-                "title": "White Slacks",
-                "price": 6.99,
-                "gender": "female",
-                "categ": "Slacks",
-                "image": { "fields": { "file": { "url": "images/women/slacks/white.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "46" },
-            "fields": {
-                "title": "Gray Slacks",
-                "price": 6.99,
-                "gender": "female",
-                "categ": "Slacks",
-                "image": { "fields": { "file": { "url": "images/women/slacks/gray.jpg" } } }
-            }
-        },
-
-        {
-            "sys": { "id": "47" },
-            "fields": {
-                "title": "Black Leather Flats",
-                "price": 4.99,
-                "gender": "female",
-                "categ": "Flats",
-                "image": { "fields": { "file": { "url": "images/women/flats/black.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "48" },
-            "fields": {
-                "title": "Brown Leather Flats",
-                "price": 4.99,
-                "gender": "female",
-                "categ": "Flats",
-                "image": { "fields": { "file": { "url": "images/women/flats/brown.jpg" } } }
-            }
-        },
-        {
-            "sys": { "id": "49" },
-            "fields": {
-                "title": "Tan Leather Flats",
-                "price": 4.99,
-                "gender": "female",
-                "categ": "Flats",
-                "image": { "fields": { "file": { "url": "images/women/flats/tan.jpg" } } }
+                "image": { "fields": { "file": { "url": "./images/product-2.jpeg" } } }
             }
         }
     ]
