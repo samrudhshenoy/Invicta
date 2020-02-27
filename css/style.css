@@ -512,7 +512,7 @@ mark,
 }
 
 .img-fluid {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
 }
 
@@ -11601,6 +11601,9 @@ h3,
     .owl-carousel.home-slider .slider-item .slider-text {
         text-align: center;
     }
+    .owl-carousel.home-slider .slider-item .img-fluid {
+        display: none;
+    }
 }
 
 .owl-carousel.home-slider .slider-item .slider-text .one-third {
@@ -11709,6 +11712,14 @@ h3,
 
 .owl-carousel.home-slider .slider-item .slider-text .horizontal {
     position: relative;
+}
+@media (max-width: 991.98px){
+  .owl-carousel.home-slider .slider-item .slider-text .horizontal {
+      width: 100vw;
+      margin-left: 0%;
+      margin-right: 10%;
+  }
+
 }
 
 .owl-carousel.home-slider .slider-item .slider-text h1 {
