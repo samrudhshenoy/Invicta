@@ -41,6 +41,7 @@
     "Liberation Mono", "Courier New", monospace;
 }
 
+
 *,
 *::before,
 *::after {
@@ -2750,6 +2751,8 @@ textarea.form-control.is-invalid {
   }
 }
 
+
+/* Default button shaders */
 .btn {
   color: #fff;
   text-transform: uppercase;
@@ -2768,6 +2771,7 @@ textarea.form-control.is-invalid {
   }
 }
 
+/* Button when focused/pressed on */
 .btn:focus,
 .btn.focus {
   outline: 0;
@@ -2791,6 +2795,7 @@ fieldset:disabled a.btn {
   border-color: #007bff;
 }
 
+/* Button when hovered over*/
 .btn-primary:hover {
   color: #fff;
   background-color: #0069d9;
