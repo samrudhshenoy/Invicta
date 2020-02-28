@@ -178,15 +178,15 @@ function ready() {
       localStorage.setItem("clothes", JSON.stringify(clothes));
       clothes.push(new Cloth(1));
       localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(45));
+      clothes.push(new Cloth(3));
       localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(5));
+      clothes.push(new Cloth(41));
       localStorage.setItem("clothes", JSON.stringify(clothes));
       clothes.push(new Cloth(21));
       localStorage.setItem("clothes", JSON.stringify(clothes));
       clothes.push(new Cloth(31));
       localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(41));
+      clothes.push(new Cloth(5));
       localStorage.setItem("clothes", JSON.stringify(clothes));
       clothes.push(new Cloth(14));
       localStorage.setItem("clothes", JSON.stringify(clothes));
