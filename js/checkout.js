@@ -5,18 +5,13 @@ if (document.readyState == "loading") {
 }
 
 function ready() {
-  var delivery = document.getElementById("delivery");
+  var delivery = document.getElementById("delivery").value;
   var free = document.getElementById("free");
-  if (delivery.checked == true) {
-    free.checked = false;
-    Grandtotal = GrandTotal + 4.99;
+  function add() {
+    Grandtotal = GrandTotal + 4.0;
     document.getElementById("GrandTotal").innerHTML = GrandTotal;
   }
-  if (free.checked == true) {
-    delivery.checked = false;
-    Grandtotal = GrandTotal + 0;
-    document.getElementById("GrandTotal").innerHTML = GrandTotal;
-  }
+
   document.getElementById("tax").innerHTML = JSON.parse(
     localStorage.getItem("tax")
   );
