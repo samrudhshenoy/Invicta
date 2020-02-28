@@ -7506,7 +7506,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background-color: transparent !important;
 }
 
 a.bg-dark:hover,

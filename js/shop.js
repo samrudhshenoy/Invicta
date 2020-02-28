@@ -303,6 +303,7 @@ function ready() {
       let clothes = [];
       let picked = [];
       let filler = document.getElementsByClassName("product");
+      console.log(filler);
       function setOne(event) {
         setter = 0;
       }
@@ -408,7 +409,7 @@ function ready() {
         setter = 34;
       }
       function setThirtySix(event) {
-        setter = 3;
+        setter = 35;
       }
       function setThirtySeven(event) {
         setter = 36;
