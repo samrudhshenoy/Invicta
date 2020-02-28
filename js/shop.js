@@ -87,6 +87,24 @@ function shirts() {
   FemaleSlacks.style.display = "none";
   Flats.style.display = "none";
 }
+function skirts() {
+  event.preventDefault();
+  Tuxedo.style.display = "none";
+  Blazers.style.display = "none";
+  Accessories.style.display = "none";
+  Shirts.style.display = "none";
+  Slacks.style.display = "none";
+  Shoes.style.display = "none";
+  Ties.style.display = "none";
+  Blouses.style.display = "none";
+  Skirts.style.display = "flex";
+  Heels.style.display = "none";
+  Watches.style.display = "none";
+  FemaleBlazers.style.display = "none";
+  FemaleShirts.style.display = "none";
+  FemaleSlacks.style.display = "none";
+  Flats.style.display = "none";
+}
 function slacks() {
   event.preventDefault();
   Tuxedo.style.display = "none";
