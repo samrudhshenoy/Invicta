@@ -1,290 +1,291 @@
 localStorage.setItem("picked", 0);
-var Tuxedo = document.getElementById("Tuxedos");
-var Accessories = document.getElementById("Accessories");
-var Blazers = document.getElementById("Blazers");
-var Shirts = document.getElementById("Shirts");
-var Slacks = document.getElementById("Slacks");
-var Shoes = document.getElementById("Shoes");
-var Ties = document.getElementById("Ties");
-var Blouses = document.getElementById("Blouses");
-var Skirts = document.getElementById("Skirts");
-var Heels = document.getElementById("Heels");
-var Watches = document.getElementById("Watches");
-var FemaleBlazers = document.getElementById("FemaleBlazers");
-var FemaleShirts = document.getElementById("FemaleShirts");
-var FemaleSlacks = document.getElementById("FemaleSlacks");
-var Flats = document.getElementById("Flats");
+// var Tuxedo = document.getElementById("Tuxedos");
+// var Accessories = document.getElementById("Accessories");
+// var Blazers = document.getElementById("Blazers");
+// var Shirts = document.getElementById("Shirts");
+// var Slacks = document.getElementById("Slacks");
+// var Shoes = document.getElementById("Shoes");
+// var Ties = document.getElementById("Ties");
+// var Blouses = document.getElementById("Blouses");
+// var Skirts = document.getElementById("Skirts");
+// var Heels = document.getElementById("Heels");
+// var Watches = document.getElementById("Watches");
+// var FemaleBlazers = document.getElementById("FemaleBlazers");
+// var FemaleShirts = document.getElementById("FemaleShirts");
+// var FemaleSlacks = document.getElementById("FemaleSlacks");
+// var Flats = document.getElementById("Flats");
 
-function tuxedos() {
-  event.preventDefault();
-  Tuxedo.style.display = "flex";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function blazers() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "flex";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function accessories() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "flex";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function shirts() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "flex";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function skirts() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "flex";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function slacks() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "flex";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function shoes() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "flex";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function ties() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "flex";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function watches() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "flex";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function femaleblazers() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "flex";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function blouses() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "flex";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function femaleshirts() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "flex";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
-function femaleslacks() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "flex";
-  Flats.style.display = "none";
-}
-function flats() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "none";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "flex";
-}
-function heels() {
-  event.preventDefault();
-  Tuxedo.style.display = "none";
-  Blazers.style.display = "none";
-  Accessories.style.display = "none";
-  Shirts.style.display = "none";
-  Slacks.style.display = "none";
-  Shoes.style.display = "none";
-  Ties.style.display = "none";
-  Blouses.style.display = "none";
-  Skirts.style.display = "none";
-  Heels.style.display = "flex";
-  Watches.style.display = "none";
-  FemaleBlazers.style.display = "none";
-  FemaleShirts.style.display = "none";
-  FemaleSlacks.style.display = "none";
-  Flats.style.display = "none";
-}
+// function tuxedos() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "flex";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function blazers() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "flex";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function accessories() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "flex";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function shirts() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "flex";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function skirts() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "flex";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function slacks() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "flex";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function shoes() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "flex";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function ties() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "flex";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function watches() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "flex";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function femaleblazers() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "flex";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function blouses() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "flex";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function femaleshirts() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "flex";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+// function femaleslacks() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "flex";
+//   Flats.style.display = "none";
+// }
+// function flats() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "none";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "flex";
+// }
+// function heels() {
+//   event.preventDefault();
+//   Tuxedo.style.display = "none";
+//   Blazers.style.display = "none";
+//   Accessories.style.display = "none";
+//   Shirts.style.display = "none";
+//   Slacks.style.display = "none";
+//   Shoes.style.display = "none";
+//   Ties.style.display = "none";
+//   Blouses.style.display = "none";
+//   Skirts.style.display = "none";
+//   Heels.style.display = "flex";
+//   Watches.style.display = "none";
+//   FemaleBlazers.style.display = "none";
+//   FemaleShirts.style.display = "none";
+//   FemaleSlacks.style.display = "none";
+//   Flats.style.display = "none";
+// }
+
 //creates efficient loading of the website
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoaded", ready);
