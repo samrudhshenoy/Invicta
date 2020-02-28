@@ -18,7 +18,8 @@ document.getElementById("picked").innerHTML = picked.length;
 function call(parameter) {
   var change = document.getElementById("picked").innerHTML;
   document.getElementById("picked").innerHTML = change - 1;
-  Total = Total - parseFloat(document.getElementById("total0").innerHTML);
+  Total =
+    Total - parseFloat(document.getElementById("total" + parameter).innerHTML);
   fakeCheck();
 }
 function update(parameter) {

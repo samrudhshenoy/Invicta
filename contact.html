@@ -31,6 +31,9 @@
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+  @import url('https://fonts.googleapis.com/css?family=Belleza|Marcellus+SC&display=swap');
+  </style>
 
 </head>
 
@@ -58,10 +61,10 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Invicta</a>
+            <a class="navbar-brand" href="index.html" style="font-family:'Marcellus SC';letter-spacing:1px;">Invicta</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
-            </button>
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
@@ -78,8 +81,7 @@
                     </li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i
-                                class="fa fa-shopping-cart" style="font-size:12px;color:white"></i>[0]</a></li>
+                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i class="fa fa-shopping-cart" style="font-size:12px;color:white"></i>[<t id = "picked"></t>]</a></li>
 
                 </ul>
             </div>
@@ -91,6 +93,7 @@
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center">
                 <div class="col-md-9 ftco-animate text-center">
+                    <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span> / Contact</span></p>
                     <h1 class="mb-0 bread">Contact Us</h1>
                 </div>
             </div>
