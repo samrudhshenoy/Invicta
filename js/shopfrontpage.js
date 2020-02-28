@@ -176,51 +176,51 @@ function ready() {
       }
       clothes.push(new Cloth(26));
       localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(1));
-      localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(45));
-      localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(5));
-      localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(21));
-      localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(31));
-      localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(41));
-      localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(14));
-      localStorage.setItem("clothes", JSON.stringify(clothes));
+      //   clothes.push(new Cloth(1));
+      //   localStorage.setItem("clothes", JSON.stringify(clothes));
+      //   clothes.push(new Cloth(45));
+      //   localStorage.setItem("clothes", JSON.stringify(clothes));
+      //   clothes.push(new Cloth(5));
+      //   localStorage.setItem("clothes", JSON.stringify(clothes));
+      //   clothes.push(new Cloth(21));
+      //   localStorage.setItem("clothes", JSON.stringify(clothes));
+      //   clothes.push(new Cloth(31));
+      //   localStorage.setItem("clothes", JSON.stringify(clothes));
+      //   clothes.push(new Cloth(41));
+      //   localStorage.setItem("clothes", JSON.stringify(clothes));
+      //   clothes.push(new Cloth(14));
+      //   localStorage.setItem("clothes", JSON.stringify(clothes));
 
       document.getElementById("picked").innerHTML = picked.length;
 
-      document
-        .getElementById("two")
-        .addEventListener("mouseover", setTwo, false);
+      //   document
+      //     .getElementById("two")
+      //     .addEventListener("mouseover", setTwo, false);
 
-      document
-        .getElementById("two")
-        .addEventListener("click", addToCart, false);
+      //   document
+      //     .getElementById("two")
+      //     .addEventListener("click", addToCart, false);
 
-      document
-        .getElementById("six")
-        .addEventListener("click", addToCart, false);
-      document
-        .getElementById("six")
-        .addEventListener("mouseover", setSix, false);
+      //   document
+      //     .getElementById("six")
+      //     .addEventListener("click", addToCart, false);
+      //   document
+      //     .getElementById("six")
+      //     .addEventListener("mouseover", setSix, false);
 
-      document
-        .getElementById("fifteen")
-        .addEventListener("click", addToCart, false);
-      document
-        .getElementById("fifteen")
-        .addEventListener("mouseover", setFifteen, false);
+      //   document
+      //     .getElementById("fifteen")
+      //     .addEventListener("click", addToCart, false);
+      //   document
+      //     .getElementById("fifteen")
+      //     .addEventListener("mouseover", setFifteen, false);
 
-      document
-        .getElementById("twentytwo")
-        .addEventListener("click", addToCart, false);
-      document
-        .getElementById("twentytwo")
-        .addEventListener("mouseover", setTwentyTwo, false);
+      //   document
+      //     .getElementById("twentytwo")
+      //     .addEventListener("click", addToCart, false);
+      //   document
+      //     .getElementById("twentytwo")
+      //     .addEventListener("mouseover", setTwentyTwo, false);
 
       document
         .getElementById("twentyseven")
@@ -229,19 +229,19 @@ function ready() {
         .getElementById("twentyseven")
         .addEventListener("mouseover", setTwentySeven, false);
 
-      document
-        .getElementById("fourtytwo")
-        .addEventListener("click", addToCart, false);
-      document
-        .getElementById("fourtytwo")
-        .addEventListener("mouseover", setFourtyTwo, false);
+      //   document
+      //     .getElementById("fourtytwo")
+      //     .addEventListener("click", addToCart, false);
+      //   document
+      //     .getElementById("fourtytwo")
+      //     .addEventListener("mouseover", setFourtyTwo, false);
 
-      document
-        .getElementById("fourtysix")
-        .addEventListener("click", addToCart, false);
-      document
-        .getElementById("fourtysix")
-        .addEventListener("mouseover", setFourtySix, false);
+      //   document
+      //     .getElementById("fourtysix")
+      //     .addEventListener("click", addToCart, false);
+      //   document
+      //     .getElementById("fourtysix")
+      //     .addEventListener("mouseover", setFourtySix, false);
 
       function addToCart(event) {
         event.preventDefault();
