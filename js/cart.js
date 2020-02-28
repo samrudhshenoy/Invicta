@@ -42,6 +42,10 @@ for (var i = 0; i < picked.length; i++) {
   total = total / 100;
   document.getElementById("total" + i).innerHTML = total;
   Total = total + Total;
+  Total = Total * 100;
+  Total = Math.trunc(Total);
+
+  Total = Total / 100;
 }
 check();
 function check() {
@@ -55,6 +59,10 @@ function check() {
   tax = tax * 100;
   tax = Math.trunc(tax);
   tax = tax / 100;
+  Total = Total * 100;
+  Total = Math.trunc(Total);
+
+  Total = Total / 100;
   document.getElementById("Total").innerHTML = Total;
 
   document.getElementById("tax").innerHTML = tax;
