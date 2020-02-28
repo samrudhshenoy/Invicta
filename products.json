@@ -350,7 +350,7 @@
         "gender": "female",
         "categ": "Skirts",
         "image": {
-          "fields": { "file": { "url": "images/women/skirts/gray.jpg" } }
+          "fields": { "file": { "url": "images/women/skirts/white.jpg" } }
         }
       }
     },
@@ -362,7 +362,7 @@
         "gender": "female",
         "categ": "Skirts",
         "image": {
-          "fields": { "file": { "url": "images/women/skirts/white.jpg" } }
+          "fields": { "file": { "url": "images/women/skirts/gray.jpg" } }
         }
       }
     },

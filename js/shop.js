@@ -16,6 +16,7 @@ function ready() {
     .then(function(data) {
       let clothes = [];
       let picked = [];
+      let filler = data.items;
 
       function setOne(event) {
         setter = 0;
@@ -154,7 +155,7 @@ function ready() {
       function setFourtySix(event) {
         setter = 45;
       }
-      function setFourSeven(event) {
+      function setFourtySeven(event) {
         setter = 46;
       }
       function setFourtyEight(event) {
@@ -175,7 +176,7 @@ function ready() {
           document.getElementById("img" + number).src = this.image;
         }
       }
-      for (var i = 0; i < 13; i++) {
+      for (var i = 0; i < filler.length; i++) {
         clothes.push(new Cloth(i));
         localStorage.setItem("clothes", JSON.stringify(clothes));
       }
