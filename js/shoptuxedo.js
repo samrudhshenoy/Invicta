@@ -16,16 +16,12 @@ function ready() {
     .then(function(data) {
       let clothes = [];
       let picked = [];
-      console.log(filler);
+      function setOne(event) {
+        setter = 0;
+      }
 
-      function setThree(event) {
-        setter = 2;
-      }
-      function setFour(event) {
-        setter = 3;
-      }
-      function setFive(event) {
-        setter = 4;
+      function setTwo(event) {
+        setter = 1;
       }
 
       class Cloth {
@@ -39,7 +35,7 @@ function ready() {
           document.getElementById("img" + number).src = this.image;
         }
       }
-      for (var i = 2; i < 5; i++) {
+      for (var i = 0; i < 2; i++) {
         clothes.push(new Cloth(i));
         localStorage.setItem("clothes", JSON.stringify(clothes));
       }
@@ -47,23 +43,19 @@ function ready() {
       document.getElementById("picked").innerHTML = picked.length;
 
       document
-        .getElementById("three")
-        .addEventListener("mouseover", setThree, false);
+        .getElementById("one")
+        .addEventListener("mouseover", setOne, false);
 
       document
-        .getElementById("three")
+        .getElementById("one")
         .addEventListener("click", addToCart, false);
+
       document
-        .getElementById("four")
-        .addEventListener("mouseover", setFour, false);
+        .getElementById("two")
+        .addEventListener("mouseover", setTwo, false);
+
       document
-        .getElementById("four")
-        .addEventListener("click", addToCart, false);
-      document
-        .getElementById("five")
-        .addEventListener("mouseover", setFive, false);
-      document
-        .getElementById("five")
+        .getElementById("two")
         .addEventListener("click", addToCart, false);
 
       function addToCart(event) {
@@ -72,29 +64,20 @@ function ready() {
         localStorage.setItem("picked", JSON.stringify(picked));
 
         document.getElementById("picked").innerHTML = picked.length;
-
-        if (setter == 2) {
+        if (setter == 0) {
           document
-            .getElementById("three")
-            .removeEventListener("mouseover", setThree, false);
+            .getElementById("one")
+            .removeEventListener("mouseover", setOne, false);
           document
-            .getElementById("three")
+            .getElementById("one")
             .removeEventListener("click", addToCart, false);
         }
-        if (setter == 3) {
+        if (setter == 1) {
           document
-            .getElementById("four")
-            .removeEventListener("mouseover", setFour, false);
+            .getElementById("two")
+            .removeEventListener("mouseover", setTwo, false);
           document
-            .getElementById("four")
-            .removeEventListener("click", addToCart, false);
-        }
-        if (setter == 4) {
-          document
-            .getElementById("five")
-            .removeEventListener("mouseover", setFive, false);
-          document
-            .getElementById("five")
+            .getElementById("two")
             .removeEventListener("click", addToCart, false);
         }
       }
