@@ -411,7 +411,7 @@
         "gender": "male",
         "categ": "Watches",
         "image": {
-          "fields": { "file": { "url": "images/men/watches/black.jpg" } }
+          "fields": { "file": { "url": "images/men/watches/black.png" } }
         }
       }
     },
@@ -423,7 +423,7 @@
         "gender": "male",
         "categ": "Watches",
         "image": {
-          "fields": { "file": { "url": "images/men/watches/brown.jpg" } }
+          "fields": { "file": { "url": "images/men/watches/brown.png" } }
         }
       }
     },
@@ -435,7 +435,7 @@
         "gender": "male",
         "categ": "Watches",
         "image": {
-          "fields": { "file": { "url": "images/men/watches/tan.jpg" } }
+          "fields": { "file": { "url": "images/men/watches/tan.png" } }
         }
       }
     },

@@ -176,11 +176,11 @@ function ready() {
       }
       clothes.push(new Cloth(26));
       localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(1));
-      localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(3));
+      clothes.push(new Cloth(9));
       localStorage.setItem("clothes", JSON.stringify(clothes));
       clothes.push(new Cloth(41));
+      localStorage.setItem("clothes", JSON.stringify(clothes));
+      clothes.push(new Cloth(3));
       localStorage.setItem("clothes", JSON.stringify(clothes));
       clothes.push(new Cloth(21));
       localStorage.setItem("clothes", JSON.stringify(clothes));
@@ -188,7 +188,7 @@ function ready() {
       localStorage.setItem("clothes", JSON.stringify(clothes));
       clothes.push(new Cloth(5));
       localStorage.setItem("clothes", JSON.stringify(clothes));
-      clothes.push(new Cloth(14));
+      clothes.push(new Cloth(36));
       localStorage.setItem("clothes", JSON.stringify(clothes));
 
       document.getElementById("picked").innerHTML = picked.length;
