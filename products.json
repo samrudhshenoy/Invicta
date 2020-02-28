@@ -62,7 +62,7 @@
         "title": "Cuff Links",
         "price": 0.99,
         "gender": "male",
-        "categ": "Blazers",
+        "categ": "Accessories",
         "image": {
           "fields": { "file": { "url": "images/men/blazers/cufflinks.jpg" } }
         }
@@ -74,7 +74,7 @@
         "title": "Pocket Square",
         "price": 0.99,
         "gender": "male",
-        "categ": "Blazers",
+        "categ": "Accessories",
         "image": {
           "fields": { "file": { "url": "images/men/blazers/pocketsquare.jpg" } }
         }
@@ -286,7 +286,7 @@
         "title": "Tie Clip",
         "price": 0.99,
         "gender": "male",
-        "categ": "Ties",
+        "categ": "Accessories",
         "image": {
           "fields": { "file": { "url": "images/men/ties/tieclip.jpg" } }
         }
@@ -445,7 +445,7 @@
         "title": "Black Blazer",
         "price": 11.99,
         "gender": "female",
-        "categ": "Blazers",
+        "categ": "FemaleBlazers",
         "image": {
           "fields": { "file": { "url": "images/women/blazers/black.jpg" } }
         }
@@ -457,7 +457,7 @@
         "title": "Gray Blazer",
         "price": 11.99,
         "gender": "female",
-        "categ": "Blazers",
+        "categ": "FemaleBlazers",
         "image": {
           "fields": { "file": { "url": "images/women/blazers/gray.jpg" } }
         }
@@ -469,7 +469,7 @@
         "title": "White Blazer",
         "price": 11.99,
         "gender": "female",
-        "categ": "Blazers",
+        "categ": "FemaleBlazers",
         "image": {
           "fields": { "file": { "url": "images/women/blazers/white.jpg" } }
         }
@@ -481,7 +481,7 @@
         "title": "Black Shirt",
         "price": 7.99,
         "gender": "female",
-        "categ": "Shirts",
+        "categ": "FemaleShirts",
         "image": {
           "fields": { "file": { "url": "images/women/shirts/black.jpg" } }
         }
@@ -493,7 +493,7 @@
         "title": "White Shirt",
         "price": 7.99,
         "gender": "female",
-        "categ": "Shirts",
+        "categ": "FemaleShirts",
         "image": {
           "fields": { "file": { "url": "images/women/shirts/white.jpg" } }
         }
@@ -505,7 +505,7 @@
         "title": "Light Blue Shirt",
         "price": 7.99,
         "gender": "female",
-        "categ": "Shirts",
+        "categ": "FemaleShirts",
         "image": {
           "fields": { "file": { "url": "images/women/shirts/lightblue.jpg" } }
         }
@@ -517,7 +517,7 @@
         "title": "Black Slacks",
         "price": 6.99,
         "gender": "female",
-        "categ": "Slacks",
+        "categ": "FemaleSlacks",
         "image": {
           "fields": { "file": { "url": "images/women/slacks/black.jpg" } }
         }
@@ -529,7 +529,7 @@
         "title": "White Slacks",
         "price": 6.99,
         "gender": "female",
-        "categ": "Slacks",
+        "categ": "FemaleSlacks",
         "image": {
           "fields": { "file": { "url": "images/women/slacks/white.jpg" } }
         }
@@ -541,7 +541,7 @@
         "title": "Gray Slacks",
         "price": 6.99,
         "gender": "female",
-        "categ": "Slacks",
+        "categ": "FemaleSlacks",
         "image": {
           "fields": { "file": { "url": "images/women/slacks/gray.jpg" } }
         }
