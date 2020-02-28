@@ -301,8 +301,7 @@ function ready() {
     .then(function(data) {
       let clothes = [];
       let picked = [];
-      let filler = data.items;
-
+      let filler = document.getElementsByClassName("product");
       function setOne(event) {
         setter = 0;
       }
