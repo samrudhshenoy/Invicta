@@ -16,7 +16,6 @@ function ready() {
     .then(function(data) {
       let clothes = [];
       let picked = [];
-      console.log(filler);
 
       function setThree(event) {
         setter = 2;
