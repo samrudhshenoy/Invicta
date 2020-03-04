@@ -1,4 +1,8 @@
-localStorage.setItem("picked", 0);
+let picked = JSON.parse(localStorage.getItem("picked"));
+if (picked == 0) {
+  picked = [];
+}
+document.getElementById("picked").innerHTML = picked.length;
 
 //creates efficient loading of the website
 if (document.readyState == "loading") {
@@ -15,7 +19,6 @@ function ready() {
     })
     .then(function (data) {
       let clothes = [];
-      let picked = [];
       let filler = document.getElementsByClassName("product");
       function setOne(event) {
         setter = 0;

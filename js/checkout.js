@@ -1,3 +1,8 @@
+let picked = JSON.parse(localStorage.getItem("picked"));
+if (picked == 0) {
+  picked = [];
+}
+document.getElementById("picked").innerHTML = picked.length;
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoaded", ready);
 } else {

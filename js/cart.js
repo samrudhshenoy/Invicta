@@ -2,6 +2,7 @@ let picked = JSON.parse(localStorage.getItem("picked"));
 if (picked == 0) {
   picked = [];
 }
+document.getElementById("picked").innerHTML = picked.length;
 let Total = 0;
 let total = 0;
 let GrandTotal = 0;

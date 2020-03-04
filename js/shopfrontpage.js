@@ -1,5 +1,8 @@
-localStorage.setItem("picked", 0);
-
+let picked = JSON.parse(localStorage.getItem("picked"));
+if (picked == 0) {
+  picked = [];
+}
+document.getElementById("picked").innerHTML = picked.length;
 //creates efficient loading of the website
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoaded", ready);
@@ -10,12 +13,11 @@ if (document.readyState == "loading") {
 function ready() {
   //creates the shop with the products from products.json
   fetch("products.json")
-    .then(function(resp) {
+    .then(function (resp) {
       return resp.json();
     })
-    .then(function(data) {
+    .then(function (data) {
       let clothes = [];
-      let picked = [];
       function setOne(event) {
         setter = 0;
       }
