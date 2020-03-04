@@ -10534,7 +10534,7 @@ h3, .h3 {
 .mouse-icon {
   width: 60px;
   height: 60px;
-  border: 1px solid rgba(0, 0, 0, 0.7);
+  border: 1px solid white;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -11984,7 +11984,7 @@ h3, .h3 {
 
 .table tbody tr td.product-name {
   color: black;
-  width: 30%;
+  width: 25%;
 }
 
 .table tbody tr td.product-name h3 {
@@ -11997,6 +11997,7 @@ h3, .h3 {
 
 .table tbody tr td.total, .table tbody tr td.price {
   color: black;
+  width: 20%;
 }
 
 .cart-wrap .btn-primary {
