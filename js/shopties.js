@@ -19,8 +19,6 @@ function ready() {
     })
     .then(function (data) {
       let clothes = [];
-      let picked = [];
-      let filler = document.getElementsByClassName("product");
 
       function setSeventeen(event) {
         setter = 16;

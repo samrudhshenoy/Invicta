@@ -18,7 +18,6 @@ function ready() {
     })
     .then(function (data) {
       let clothes = [];
-      let picked = [];
 
       function setSix(event) {
         setter = 5;
