@@ -32,6 +32,8 @@ let times = 0;
 document.getElementById("picked").innerHTML = picked.length;
 
 function call(parameter) {
+  event.preventDefault();
+
   let store = JSON.parse(localStorage.getItem("picked"));
   console.log(store);
   console.log(parameter);
@@ -52,9 +54,7 @@ function call(parameter) {
 function update(parameter) {
   times = document.getElementsByClassName("input-number")[parameter].value;
   total = picked[parameter].price * times;
-  total = total * 100;
-  total = Math.trunc(total);
-  total = total / 100;
+
   document.getElementById("total" + parameter).innerHTML = total;
   check();
 }
