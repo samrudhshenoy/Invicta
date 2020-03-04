@@ -141,7 +141,7 @@
                             <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group">
-                            <input style="color:black" type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                            <input style="color:black" type="submit" value="Send Message" class="btn btn-primary py-3 px-5" onclick="add()">
                         </div>
                     </form>
 
@@ -231,6 +231,13 @@
     <!-- loader, to provide a smooth transition between pages if the user has a slow internet connection -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+
+    <!-- JavaScript function to send a successful message sent alert -->
+    <script>
+       function add() {
+          alert("Message sent successfully!");
+       }
+    </script>
 
     <!--All javascript file declarations and references-->
     <script src="js/jquery.min.js"></script>
