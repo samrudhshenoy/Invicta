@@ -10,10 +10,10 @@ if (document.readyState == "loading") {
 function ready() {
   //creates the shop with the products from products.json
   fetch("products.json")
-    .then(function(resp) {
+    .then(function (resp) {
       return resp.json();
     })
-    .then(function(data) {
+    .then(function (data) {
       let clothes = [];
       let picked = [];
       let filler = document.getElementsByClassName("product");
@@ -29,6 +29,9 @@ function ready() {
       }
       function setFour(event) {
         setter = 3;
+      }
+      function setFive(event) {
+        setter = 4;
       }
 
       function setSix(event) {
@@ -210,7 +213,12 @@ function ready() {
       document
         .getElementById("four")
         .addEventListener("click", addToCart, false);
-
+      document
+        .getElementById("five")
+        .addEventListener("mouseover", setFive, false);
+      document
+        .getElementById("five")
+        .addEventListener("click", addToCart, false);
       document
         .getElementById("six")
         .addEventListener("click", addToCart, false);
@@ -522,7 +530,14 @@ function ready() {
             .getElementById("five")
             .removeEventListener("click", addToCart, false);
         }
-
+        if (setter == 5) {
+          document
+            .getElementById("six")
+            .removeEventListener("mouseover", setSix, false);
+          document
+            .getElementById("six")
+            .removeEventListener("click", addToCart, false);
+        }
         if (setter == 6) {
           document
             .getElementById("seven")

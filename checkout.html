@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Checkout - Invicta</title>
+    <title>Invicta - Checkout</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -32,11 +32,12 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-  @import url('https://fonts.googleapis.com/css?family=Belleza|Marcellus+SC&display=swap');
-  </style>
+        @import url('https://fonts.googleapis.com/css?family=Belleza|Marcellus+SC&display=swap');
+    </style>
 </head>
 
 <!--Header with phone number, email, and delivery days to provide easy access for user-->
+
 <body class="goto-here">
     <div class="py-1 bg-turquoise">
         <div class="container">
@@ -44,11 +45,13 @@
                 <div class="col-lg-12 d-block">
                     <div class="row d-flex">
                         <div class="col-md pr-4 d-flex topper align-items-center">
-                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
+                                    class="icon-phone2"></span></div>
                             <span class="text">+1 (800) 007-8990</span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
-                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
+                                    class="icon-paper-plane"></span></div>
                             <span class="text">ebiz@hhsfbla.com</span>
                         </div>
                         <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
@@ -75,8 +78,9 @@
                     <li class="nav-item"><a href="shop.html" class="nav-link">Rentals</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i class="fa fa-shopping-cart"
-                                style="font-size:12px;color:white"></i>[<t id="picked"></t>]</a></li>
+                    <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><i
+                                class="fa fa-shopping-cart" style="font-size:12px;color:white"></i>[<t id="picked"></t>
+                            ]</a></li>
 
                 </ul>
             </div>
@@ -127,7 +131,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Appartment, suite, unit etc: (optional)">
+                                    <input type="text" class="form-control"
+                                        placeholder="Appartment, suite, unit etc: (optional)">
                                 </div>
                             </div>
                             <div class="w-100"></div>
@@ -138,17 +143,34 @@
                                     <div class="select-wrap">
                                         <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                                         <select name="" id="" class="form-control">
-                                          <option value="">Atherton</option>
-                                          <option value="">Cupertino</option>
-                  		                    <option value="">Los Altos</option>
-                                          <option value="">Los Altos Hills</option>
-                                          <option value="">Menlo Park</option>
-                  		                    <option value="">Mountain View</option>
-                  		                    <option value="">Palo Alto</option>
-                  		                    <option value="">San Jose</option>
-                                          <option value="">Santa Clara</option>
-                  		                  	<option value="">Sunnyvale</option>
-                		                    </select>
+                                            <option value="">Atherton</option>
+                                            <option value="">Belmont</option>
+                                            <option value="">Campbell</option>
+                                            <option value="">Cupertino</option>
+                                            <option value="">East Palo Alto</option>
+                                            <option value="">Fremont</option>
+                                            <option value="">Foster City</option>
+                                            <option value="">Hayward</option>
+                                            <option value="">Los Altos</option>
+                                            <option value="">Los Altos Hills</option>
+                                            <option value="">Los Gatos</option>
+                                            <option value="">Milpitas</option>
+                                            <option value="">Menlo Park</option>
+                                            <option value="">Monte Sereno</option>
+                                            <option value="">Morgan Hill</option>
+                                            <option value="">Mountain View</option>
+                                            <option value="">Newark</option>
+                                            <option value="">Redwood City</option>
+                                            <option value="">Redwood Shores</option>
+                                            <option value="">Saratoga</option>
+                                            <option value="">San Carlos</option>
+                                            <option value="">San Jose</option>
+                                            <option value="">San Mateo</option>
+                                            <option value="">Santa Clara</option>
+                                            <option value="">Sunnyvale</option>
+                                            <option value="">Union City</option>
+                                            <option value="">Woodside</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -180,14 +202,27 @@
                                     <div class="form-group">
                                         <div class="col-md-12">
                                             <div class="radio">
-                                                <label class="mr-3" style="color:gray"><input type="radio" id="delivery" onclick = "add()"> [Free] Standard delivery (3-5 business days)</label>
+                                                <label style="color:gray"><input type="radio" id="notFree" name="price"
+                                                        value="price" onclick="addPremium()"> &ensp; [$3.99] Premium
+                                                    Delivery (1 Business Day)</label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-md-12">
                                             <div class="radio">
-                                                <label style="color:gray"><input type="radio" id = "free" > [Free] Personal Pickup</label>
+                                                <label class="mr-3" style="color:gray"><input type="radio" id="free"
+                                                        name="price" value="price" onclick="subtractPremium()">&ensp;
+                                                    [Free] Standard delivery (3-5 Business Days)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div class="radio">
+                                                <label style="color:gray"><input type="radio" id="alsoFree" name="price"
+                                                        value="price" onclick="subtractPremium()">&ensp; [Free] Personal
+                                                    Pickup <br>(21370 Homestead Rd, Cupertino, CA 95014)</label>
                                             </div>
                                         </div>
                                     </div>
@@ -201,31 +236,31 @@
 
 
 
-  <div class="row mt-5 pt-3 d-flex">
-      <div class="col-md-6 d-flex">
-          <div class="cart-detail cart-total bg-light p-3 p-md-4">
-            <!--Cart total, displaying summation of all prices in shopping cart-->
-              <h3>
-                Cart Total
-              </h3>
-              <p class="d-flex">
-                <span>Subtotal</span>
-              $<span id="Total"></span>
-              </p>
-              <p class="d-flex">
-                <span>Sales Tax</span>
-              $<span id = "tax"></span>
-              </p>
-              <p class="d-flex">
-                <span>Delivery</span>
-                $<span id = "tax">0.00</span>
-              </p>
+                    <div class="row mt-5 pt-3 d-flex">
+                        <div class="col-md-6 d-flex">
+                            <div class="cart-detail cart-total bg-light p-3 p-md-4">
+                                <!--Cart total, displaying summation of all prices in shopping cart-->
+                                <h3>
+                                    Cart Total
+                                </h3>
+                                <p class="d-flex">
+                                    <span>Subtotal</span>
+                                    $<span id="Total"></span>
+                                </p>
+                                <p class="d-flex">
+                                    <span>Sales Tax</span>
+                                    $<span id="tax"></span>
+                                </p>
+                                <p class="d-flex">
+                                    <span>Delivery</span>
+                                    $<span id="delivery"></span>
+                                </p>
 
-              <hr />
-              <p class="d-flex total-price">
-                <span>Total</span>
-                <span>$<t id = "GrandTotal" ></t></span>
-              </p>
+                                <hr />
+                                <p class="d-flex total-price">
+                                    <span>Total</span>
+                                    <span>$<t id="GrandTotal"></t></span>
+                                </p>
                             </div>
                         </div>
                         <!--Multiple payment methods offered to provide flexibility and convenience-->
@@ -235,14 +270,16 @@
                                 <div class="form-group">
                                     <div class="col-md-12">
                                         <div class="radio">
-                                            <label><input type="radio" name="optradio" class="mr-2"> Direct Bank Tranfer</label>
+                                            <label><input type="radio" name="optradio" class="mr-2"> Direct Bank
+                                                Tranfer</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <div class="col-md-12">
                                         <div class="radio">
-                                            <label><input type="radio" name="optradio" class="mr-2"> Check Payment</label>
+                                            <label><input type="radio" name="optradio" class="mr-2"> Check
+                                                Payment</label>
                                         </div>
                                     </div>
                                 </div>
@@ -253,7 +290,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <p><a style="color:black; font-size:15px" class="btn btn-primary py-3 px-4" onclick="add()">Place order</a></p>
+                                <p><a style="color:black; font-size:15px" href="#" class="btn btn-primary py-3 px-4"
+                                        onclick="add()">Place order</a></p>
                             </div>
                         </div>
                     </div>
@@ -264,7 +302,7 @@
     </section>
     <!-- .section -->
 
-<!--Footer with all important information-->
+    <!--Footer with all important information-->
     <footer class="ftco-footer ftco-section">
         <div class="container">
             <div class="row">
@@ -281,9 +319,12 @@
                         <h2 class="ftco-heading-2">Invicta</h2>
                         <p>Dress for Success.</p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li class="ftco-animate"><a href="https://www.facebook.com/homestead8990/"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.instagram.com/homesteadfbla/?hl=en"><span class="icon-instagram"></span></a></li>
-                            <li class="ftco-animate"><a href="https://twitter.com/homesteadfbla"><span class="icon-twitter"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/homestead8990/"><span
+                                        class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/homesteadfbla/?hl=en"><span
+                                        class="icon-instagram"></span></a></li>
+                            <li class="ftco-animate"><a href="https://twitter.com/homesteadfbla"><span
+                                        class="icon-twitter"></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -292,7 +333,7 @@
                     <div class="ftco-footer-widget mb-4 ml-md-5">
                         <h2 class="ftco-heading-2">Menu</h2>
                         <ul class="list-unstyled">
-                            <li><a href="shop.html" class="py-2 d-block">Rentals</a></li>
+                            <li><a href="shop.html" class="py-2 d-block">Shop</a></li>
                             <li><a href="about.html" class="py-2 d-block">About</a></li>
                             <li><a href="contact.html" class="py-2 d-block">Contact Us</a></li>
                         </ul>
@@ -301,11 +342,12 @@
                 <!--Copyright information with detailed listed sources-->
                 <div class="col-md-4">
                     <div class="ftco-footer-widget mb-4">
-                      <h2 class="ftco-heading-2 ">Copyright Information</h2>
-                      <div class="d-flex ">
-                          <ul class="list-unstyled mr-l-5 pr-l-3 mr-4 ">
-                              <li><a href="https://docs.google.com/document/d/1qSCVXD4UUU2Txw-cKcdLXHrII0fAxGTkyajB7XxQ1L8/edit?usp=sharing" class="py-2 d-block ">Statement of Assurance</a></li>
-                          </ul>
+                        <h2 class="ftco-heading-2 ">Copyright Information</h2>
+                        <div class="d-flex ">
+                            <ul class="list-unstyled mr-l-5 pr-l-3 mr-4 ">
+                                <li><a href="https://docs.google.com/document/d/1qSCVXD4UUU2Txw-cKcdLXHrII0fAxGTkyajB7XxQ1L8/edit?usp=sharing"
+                                        class="py-2 d-block ">Statement of Assurance</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -315,9 +357,13 @@
                         <h2 class="ftco-heading-2">Have a Questions?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">21370 Homestead Rd, Cupertino, CA 95014<br/></span></li>
-                                <li><a href="tel://"><span class="icon icon-phone"></span><span class="text">+1 800 007 8990</span></a></li>
-                                <li><a href="mailto:vptechnology@hhsfbla.com"><span class="icon icon-envelope"></span><span class="text">ebiz@hhsfbla.com</span></a></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">21370 Homestead Rd,
+                                        Cupertino, CA 95014<br /></span></li>
+                                <li><a href="tel://"><span class="icon icon-phone"></span><span class="text">+1 800 007
+                                            8990</span></a></li>
+                                <li><a href="mailto:vptechnology@hhsfbla.com"><span
+                                            class="icon icon-envelope"></span><span
+                                            class="text">ebiz@hhsfbla.com</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -330,7 +376,9 @@
                         Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> Akshat Jain, Raj Raghulan, and Samrudh Shenoy. This website is for educational purposes only as Homestead FBLA's 2020 E-Business.<br/>Made with ❤️❤️ && ☕☕ in Cupertino, CA.</a>
+                        </script> Akshat Jain, Raj Raghulan, and Samrudh Shenoy. This website is for educational
+                        purposes only as Homestead FBLA's 2020 E-Business.<br />Made with ❤️❤️ && ☕☕ in Cupertino,
+                        CA.</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </p>
                 </div>
@@ -341,7 +389,12 @@
 
 
     <!-- loader, to provide a smooth transition between pages if the user has a slow internet connection -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" /></svg></div>
+
+
 
     <!--All javascript file declarations and references-->
     <script src="js/jquery.min.js"></script>
@@ -361,52 +414,12 @@
     <script src="js/checkout.js"></script>
 
 
-    <!-- JavaScript function to send a successful checkout alert -->
-    <script>
-       function add() {
-          alert("Order placed successfully!");
-       }
-    </script>
-
-
     <!--JavaScript function to link checkout to cart-->
     <script>
-        $(document).ready(function() {
-
-            var quantitiy = 0;
-            $('.quantity-right-plus').click(function(e) {
-
-                // Stop acting like a button
-                e.preventDefault();
-                // Get the field name
-                var quantity = parseInt($('#quantity').val());
-
-                // If is not undefined
-
-                $('#quantity').val(quantity + 1);
 
 
-                // Increment
-
-            });
-
-            $('.quantity-left-minus').click(function(e) {
-                // Stop acting like a button
-                e.preventDefault();
-                // Get the field name
-                var quantity = parseInt($('#quantity').val());
-
-                // If is not undefined
-
-                // Increment
-                if (quantity > 0) {
-                    $('#quantity').val(quantity - 1);
-                }
-            });
-
-        });
     </script>
-
+    s
 </body>
 
 </html>

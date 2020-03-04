@@ -3,27 +3,49 @@ if (document.readyState == "loading") {
 } else {
   ready();
 }
+let tax = JSON.parse(localStorage.getItem("tax"));
+let Total = JSON.parse(localStorage.getItem("Total"));
+let GrandTotal = JSON.parse(localStorage.getItem("GrandTotal"));
+let premium = false;
+var n = 0.0;
+document.getElementById("delivery").innerHTML = n.toFixed(2);
 
 function ready() {
-  var delivery = document.getElementById("delivery").value;
-  var free = document.getElementById("free");
-  function add() {
-    Grandtotal = GrandTotal + 4.0;
-    document.getElementById("GrandTotal").innerHTML = GrandTotal;
-  }
-
-  document.getElementById("tax").innerHTML = JSON.parse(
-    localStorage.getItem("tax")
-  );
-  document.getElementById("Total").innerHTML = JSON.parse(
-    localStorage.getItem("Total")
-  );
-  document.getElementById("GrandTotal").innerHTML = JSON.parse(
-    localStorage.getItem("GrandTotal")
-  );
+  document.getElementById("tax").innerHTML = tax.toFixed(2);
+  document.getElementById("Total").innerHTML = Total;
+  document.getElementById("GrandTotal").innerHTML = GrandTotal;
+  console.log(GrandTotal);
   let picked = JSON.parse(localStorage.getItem("picked"));
-  if (picked.length == undefined) {
+  if (picked.length == null) {
     picked = [];
   }
   document.getElementById("picked").innerHTML = picked.length;
+}
+
+function addPremium() {
+  if (premium == false) {
+    var n = 3.99;
+    n.toFixed(2);
+    GrandTotal = GrandTotal + 3.99;
+
+    GrandTotal = GrandTotal * 100;
+    GrandTotal = Math.trunc(GrandTotal);
+    GrandTotal = GrandTotal / 100;
+    document.getElementById("GrandTotal").innerHTML = GrandTotal;
+    premium = true;
+    document.getElementById("delivery").innerHTML = n.toFixed(2);
+  }
+}
+function subtractPremium() {
+  if (premium == true) {
+    var n = 0.0;
+    n.toFixed(2);
+    GrandTotal = GrandTotal - 3.99;
+    GrandTotal = GrandTotal * 100;
+    GrandTotal = Math.trunc(GrandTotal);
+    GrandTotal = GrandTotal / 100;
+    document.getElementById("GrandTotal").innerHTML = GrandTotal;
+    document.getElementById("delivery").innerHTML = n.toFixed(2);
+    premium = false;
+  }
 }
