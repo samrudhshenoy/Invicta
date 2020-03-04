@@ -32,6 +32,8 @@ let times = 0;
 document.getElementById("picked").innerHTML = picked.length;
 
 function call(parameter) {
+  event.preventDefault();
+
   let store = JSON.parse(localStorage.getItem("picked"));
   console.log(store);
   console.log(parameter);
