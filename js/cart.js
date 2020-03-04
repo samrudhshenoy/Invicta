@@ -54,9 +54,7 @@ function call(parameter) {
 function update(parameter) {
   times = document.getElementsByClassName("input-number")[parameter].value;
   total = picked[parameter].price * times;
-  total = total * 100;
-  total = Math.trunc(total);
-  total = total / 100;
+
   document.getElementById("total" + parameter).innerHTML = total;
   check();
 }
