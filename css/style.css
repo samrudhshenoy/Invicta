@@ -11984,7 +11984,7 @@ h3, .h3 {
 
 .table tbody tr td.product-name {
   color: black;
-  width: 30%;
+  width: 25%;
 }
 
 .table tbody tr td.product-name h3 {
@@ -11997,6 +11997,7 @@ h3, .h3 {
 
 .table tbody tr td.total, .table tbody tr td.price {
   color: black;
+  width: 20%;
 }
 
 .cart-wrap .btn-primary {
