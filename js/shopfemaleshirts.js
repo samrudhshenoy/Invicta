@@ -1,9 +1,16 @@
 let picked = JSON.parse(localStorage.getItem("picked"));
-if (picked == null) {
+if (
+    picked == null ||
+    picked == undefined ||
+    picked == 0 ||
+    picked.length == null ||
+    picked.length == undefined ||
+    picked.length == 0
+) {
     picked = [];
 }
 document.getElementById("picked").innerHTML = picked.length;
-//creates efficient loading of the website
+//  creates efficient loading of the website
 if (document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready);
 } else {
@@ -643,5 +650,5 @@ function ready() {
             }
         });
 
-    //makes sure the add to cart button works by adding objects
+    //makes        sure the add to cart button works by adding objects
 }

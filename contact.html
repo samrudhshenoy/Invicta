@@ -47,13 +47,11 @@
                 <div class="col-lg-12 d-block">
                     <div class="row d-flex">
                         <div class="col-md pr-4 d-flex topper align-items-center">
-                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
-                                    class="icon-phone2"></span></div>
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
                             <span class="text">+1 (800) 007-8990</span>
                         </div>
                         <div class="col-md pr-4 d-flex topper align-items-center">
-                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span
-                                    class="icon-paper-plane"></span></div>
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
                             <span class="text">ebiz@hhsfbla.com</span>
                         </div>
                         <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
@@ -68,8 +66,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html" style="font-family:'Marcellus SC';letter-spacing:1px;">Invicta</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
 
@@ -141,12 +138,10 @@
                             <input type="text" class="form-control" placeholder="  Subject">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control"
-                                placeholder="Message"></textarea>
+                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
                         </div>
                         <div class="form-group">
-                            <input style="color:black" type="submit" value="Send Message"
-                                class="btn btn-primary py-3 px-5" onclick="add()">
+                            <input style="color:black" type="submit" value="Send Message" class="btn btn-primary py-3 px-5" onclick="add()">
                         </div>
                     </form>
 
@@ -202,8 +197,7 @@
                         <h2 class="ftco-heading-2 ">Copyright Information</h2>
                         <div class="d-flex ">
                             <ul class="list-unstyled mr-l-5 pr-l-3 mr-4 ">
-                                <li><a href="https://docs.google.com/document/d/1qSCVXD4UUU2Txw-cKcdLXHrII0fAxGTkyajB7XxQ1L8/edit?usp=sharing"
-                                        class="py-2 d-block ">Statement of Assurance</a></li>
+                                <li><a href="https://docs.google.com/document/d/1qSCVXD4UUU2Txw-cKcdLXHrII0fAxGTkyajB7XxQ1L8/edit?usp=sharing" class="py-2 d-block ">Statement of Assurance</a></li>
                             </ul>
                         </div>
                     </div>
@@ -233,9 +227,8 @@
                         Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> Akshat Jain, Raj Raghulan, and Samrudh Shenoy. This website is for educational
-                        purposes only as Homestead FBLA's 2020 E-Business.<br />Made with ❤️❤️ && ☕☕ in Cupertino,
-                        CA.</a>
+                        </script> Akshat Jain, Raj Raghulan, and Samrudh Shenoy. This website is for educational purposes only as Homestead FBLA's 2020 E-Business.<br />Made with ❤️❤️ && ☕☕ in Cupertino, CA.
+                        </a>
                     </p>
                 </div>
             </div>
@@ -279,9 +272,21 @@
 
     <!--JavaScript function for successful contacted notif-->
     <script>
-       function add() {
-          alert("Message sent!");
-       }
+        function add() {
+            alert("Message sent!");
+        }
+        let picked = JSON.parse(localStorage.getItem("picked"));
+        if (
+            picked == null ||
+            picked == undefined ||
+            picked == 0 ||
+            picked.length == null ||
+            picked.length == undefined ||
+            picked.length == 0
+        ) {
+            picked = [];
+        }
+        document.getElementById("picked").innerHTML = picked.length;
     </script>
 
 </body>
