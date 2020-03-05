@@ -793,8 +793,13 @@
     <script src="js/main.js "></script>
     <script src="js/shopfrontpage.js "></script>
 
-
-
+    <script type="text/javascript">
+    var alerted = localStorage.getItem('alerted') || '';
+    if (alerted != 'yes') {
+     alert("Note: The website must be run on Google Chrome, due to plugin compatibility, thank you.");
+     localStorage.setItem('alerted','yes');
+    }
+    </script>
 
 </body>
 
