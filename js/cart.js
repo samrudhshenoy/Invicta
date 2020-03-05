@@ -1,6 +1,6 @@
 let picked = JSON.parse(localStorage.getItem("picked"));
-if (picked == 0) {
-  picked = [];
+if (picked == null) {
+    picked = [];
 }
 document.getElementById("picked").innerHTML = picked.length;
 let Total = 0;
@@ -33,106 +33,105 @@ let times = 0;
 document.getElementById("picked").innerHTML = picked.length;
 
 function call(parameter) {
-  event.preventDefault();
+    event.preventDefault();
 
-  let store = JSON.parse(localStorage.getItem("picked"));
-  console.log(store);
-  console.log(parameter);
-  if (parameter > 0)
-    store.splice(0, parameter);
-  else
-    store.shift();
+    let store = JSON.parse(localStorage.getItem("picked"));
+    console.log(store);
+    console.log(parameter);
+    if (parameter > 0) store.splice(0, parameter);
+    else store.shift();
 
-  localStorage.setItem("picked", JSON.stringify(store));
-  let picked = JSON.parse(localStorage.getItem("picked"));
+    localStorage.setItem("picked", JSON.stringify(store));
+    let picked = JSON.parse(localStorage.getItem("picked"));
 
-  document.getElementById("picked").innerHTML = picked.length;
+    document.getElementById("picked").innerHTML = picked.length;
 
-  Total = Total - document.getElementById("total" + parameter).innerHTML;
-  fakeCheck();
-
+    Total = Total - document.getElementById("total" + parameter).innerHTML;
+    fakeCheck();
 }
-function update(parameter) {
-  times = document.getElementsByClassName("input-number")[parameter].value;
-  total = picked[parameter].price * times;
 
-  document.getElementById("total" + parameter).innerHTML = total;
-  check();
+function update(parameter) {
+    times = document.getElementsByClassName("input-number")[parameter].value;
+    total = picked[parameter].price * times;
+
+    document.getElementById("total" + parameter).innerHTML = total;
+    check();
 }
 for (var i = 0; i < picked.length; i++) {
-  document.getElementById("title" + i).innerHTML = picked[i].title;
-  document.getElementById("price" + i).innerHTML = picked[i].price;
-  document.getElementById("img" + i).src = picked[i].image;
+    document.getElementById("title" + i).innerHTML = picked[i].title;
+    document.getElementById("price" + i).innerHTML = picked[i].price;
+    document.getElementById("img" + i).src = picked[i].image;
 
-  times = document.getElementsByClassName("input-number")[i].value;
-  total = picked[i].price * times;
-  total = total * 100;
-  total = Math.trunc(total);
-  total = total / 100;
-  document.getElementById("total" + i).innerHTML = total;
-  Total = total + Total;
-  Total = Total * 100;
-  Total = Math.trunc(Total);
+    times = document.getElementsByClassName("input-number")[i].value;
+    total = picked[i].price * times;
+    total = total * 100;
+    total = Math.trunc(total);
+    total = total / 100;
+    document.getElementById("total" + i).innerHTML = total;
+    Total = total + Total;
+    Total = Total * 100;
+    Total = Math.trunc(Total);
 
-  Total = Total / 100;
+    Total = Total / 100;
 }
 check();
+
 function check() {
-  Total =
-    parseFloat(document.getElementById("total0").innerHTML) +
-    parseFloat(document.getElementById("total1").innerHTML) +
-    parseFloat(document.getElementById("total2").innerHTML) +
-    parseFloat(document.getElementById("total3").innerHTML) +
-    parseFloat(document.getElementById("total4").innerHTML) +
-    parseFloat(document.getElementById("total5").innerHTML) +
-    parseFloat(document.getElementById("total6").innerHTML) +
-    parseFloat(document.getElementById("total7").innerHTML) +
-    parseFloat(document.getElementById("total8").innerHTML) +
-    parseFloat(document.getElementById("total9").innerHTML) +
-    parseFloat(document.getElementById("total10").innerHTML) +
-    parseFloat(document.getElementById("total11").innerHTML) +
-    parseFloat(document.getElementById("total12").innerHTML) +
-    parseFloat(document.getElementById("total13").innerHTML) +
-    parseFloat(document.getElementById("total14").innerHTML) +
-    parseFloat(document.getElementById("total15").innerHTML) +
-    parseFloat(document.getElementById("total16").innerHTML) +
-    parseFloat(document.getElementById("total17").innerHTML) +
-    parseFloat(document.getElementById("total18").innerHTML) +
-    parseFloat(document.getElementById("total19").innerHTML);
-  tax = Total * 0.0925;
-  tax = tax * 100;
-  tax = Math.trunc(tax);
-  tax = tax / 100;
-  Total = Total * 100;
-  Total = Math.trunc(Total);
+    Total =
+        parseFloat(document.getElementById("total0").innerHTML) +
+        parseFloat(document.getElementById("total1").innerHTML) +
+        parseFloat(document.getElementById("total2").innerHTML) +
+        parseFloat(document.getElementById("total3").innerHTML) +
+        parseFloat(document.getElementById("total4").innerHTML) +
+        parseFloat(document.getElementById("total5").innerHTML) +
+        parseFloat(document.getElementById("total6").innerHTML) +
+        parseFloat(document.getElementById("total7").innerHTML) +
+        parseFloat(document.getElementById("total8").innerHTML) +
+        parseFloat(document.getElementById("total9").innerHTML) +
+        parseFloat(document.getElementById("total10").innerHTML) +
+        parseFloat(document.getElementById("total11").innerHTML) +
+        parseFloat(document.getElementById("total12").innerHTML) +
+        parseFloat(document.getElementById("total13").innerHTML) +
+        parseFloat(document.getElementById("total14").innerHTML) +
+        parseFloat(document.getElementById("total15").innerHTML) +
+        parseFloat(document.getElementById("total16").innerHTML) +
+        parseFloat(document.getElementById("total17").innerHTML) +
+        parseFloat(document.getElementById("total18").innerHTML) +
+        parseFloat(document.getElementById("total19").innerHTML);
+    tax = Total * 0.0925;
+    tax = tax * 100;
+    tax = Math.trunc(tax);
+    tax = tax / 100;
+    Total = Total * 100;
+    Total = Math.trunc(Total);
 
-  Total = Total / 100;
-  document.getElementById("Total").innerHTML = Total;
+    Total = Total / 100;
+    document.getElementById("Total").innerHTML = Total;
 
-  document.getElementById("tax").innerHTML = tax.toFixed(2);
-  GrandTotal = Total + tax;
-  GrandTotal = GrandTotal * 100;
-  GrandTotal = Math.trunc(GrandTotal);
-  GrandTotal = GrandTotal / 100;
-  document.getElementById("GrandTotal").innerHTML = GrandTotal;
-  localStorage.setItem("GrandTotal", GrandTotal);
-  localStorage.setItem("tax", tax);
-  localStorage.setItem("Total", Total);
+    document.getElementById("tax").innerHTML = tax.toFixed(2);
+    GrandTotal = Total + tax;
+    GrandTotal = GrandTotal * 100;
+    GrandTotal = Math.trunc(GrandTotal);
+    GrandTotal = GrandTotal / 100;
+    document.getElementById("GrandTotal").innerHTML = GrandTotal;
+    localStorage.setItem("GrandTotal", GrandTotal);
+    localStorage.setItem("tax", tax);
+    localStorage.setItem("Total", Total);
 }
 
 function fakeCheck() {
-  tax = Total * 0.0925;
-  tax = tax * 100;
-  tax = Math.trunc(tax);
-  tax = tax / 100;
-  document.getElementById("Total").innerHTML = Total.toFixed(2);
+    tax = Total * 0.0925;
+    tax = tax * 100;
+    tax = Math.trunc(tax);
+    tax = tax / 100;
+    document.getElementById("Total").innerHTML = Total.toFixed(2);
 
-  document.getElementById("tax").innerHTML = tax.toFixed(2);
-  GrandTotal = Total + tax;
-  GrandTotal = GrandTotal * 100;
-  GrandTotal = Math.trunc(GrandTotal);
-  GrandTotal = GrandTotal / 100;
-  document.getElementById("GrandTotal").innerHTML = GrandTotal.toFixed(2);
+    document.getElementById("tax").innerHTML = tax.toFixed(2);
+    GrandTotal = Total + tax;
+    GrandTotal = GrandTotal * 100;
+    GrandTotal = Math.trunc(GrandTotal);
+    GrandTotal = GrandTotal / 100;
+    document.getElementById("GrandTotal").innerHTML = GrandTotal.toFixed(2);
 }
 
 let one = document.getElementById("one");
@@ -157,282 +156,255 @@ let nineteen = document.getElementById("nineteen");
 let twenty = document.getElementById("twenty");
 
 if (picked.length == 0) {
-  one.style.display = "none";
-  two.style.display = "none";
-  three.style.display = "none";
-  four.style.display = "none";
-  five.style.display = "none";
-  six.style.display = "none";
-  seven.style.display = "none";
-  eight.style.display = "none";
-  nine.style.display = "none";
-  ten.style.display = "none";
-  eleven.style.display = "none";
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    one.style.display = "none";
+    two.style.display = "none";
+    three.style.display = "none";
+    four.style.display = "none";
+    five.style.display = "none";
+    six.style.display = "none";
+    seven.style.display = "none";
+    eight.style.display = "none";
+    nine.style.display = "none";
+    ten.style.display = "none";
+    eleven.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 1) {
-  two.style.display = "none";
-  three.style.display = "none";
-  four.style.display = "none";
-  five.style.display = "none";
-  six.style.display = "none";
-  seven.style.display = "none";
-  eight.style.display = "none";
-  nine.style.display = "none";
-  ten.style.display = "none";
-  eleven.style.display = "none";
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    two.style.display = "none";
+    three.style.display = "none";
+    four.style.display = "none";
+    five.style.display = "none";
+    six.style.display = "none";
+    seven.style.display = "none";
+    eight.style.display = "none";
+    nine.style.display = "none";
+    ten.style.display = "none";
+    eleven.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 2) {
-
-  three.style.display = "none";
-  four.style.display = "none";
-  five.style.display = "none";
-  six.style.display = "none";
-  seven.style.display = "none";
-  eight.style.display = "none";
-  nine.style.display = "none";
-  ten.style.display = "none";
-  eleven.style.display = "none";
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    three.style.display = "none";
+    four.style.display = "none";
+    five.style.display = "none";
+    six.style.display = "none";
+    seven.style.display = "none";
+    eight.style.display = "none";
+    nine.style.display = "none";
+    ten.style.display = "none";
+    eleven.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 3) {
-
-  four.style.display = "none";
-  five.style.display = "none";
-  six.style.display = "none";
-  seven.style.display = "none";
-  eight.style.display = "none";
-  nine.style.display = "none";
-  ten.style.display = "none";
-  eleven.style.display = "none";
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    four.style.display = "none";
+    five.style.display = "none";
+    six.style.display = "none";
+    seven.style.display = "none";
+    eight.style.display = "none";
+    nine.style.display = "none";
+    ten.style.display = "none";
+    eleven.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 4) {
-
-  five.style.display = "none";
-  six.style.display = "none";
-  seven.style.display = "none";
-  eight.style.display = "none";
-  nine.style.display = "none";
-  ten.style.display = "none";
-  eleven.style.display = "none";
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    five.style.display = "none";
+    six.style.display = "none";
+    seven.style.display = "none";
+    eight.style.display = "none";
+    nine.style.display = "none";
+    ten.style.display = "none";
+    eleven.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 5) {
-
-  six.style.display = "none";
-  seven.style.display = "none";
-  eight.style.display = "none";
-  nine.style.display = "none";
-  ten.style.display = "none";
-  eleven.style.display = "none";
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    six.style.display = "none";
+    seven.style.display = "none";
+    eight.style.display = "none";
+    nine.style.display = "none";
+    ten.style.display = "none";
+    eleven.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 6) {
-
-  seven.style.display = "none";
-  eight.style.display = "none";
-  nine.style.display = "none";
-  ten.style.display = "none";
-  eleven.style.display = "none";
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    seven.style.display = "none";
+    eight.style.display = "none";
+    nine.style.display = "none";
+    ten.style.display = "none";
+    eleven.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 7) {
-
-  eight.style.display = "none";
-  nine.style.display = "none";
-  ten.style.display = "none";
-  eleven.style.display = "none";
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    eight.style.display = "none";
+    nine.style.display = "none";
+    ten.style.display = "none";
+    eleven.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 8) {
-
-  nine.style.display = "none";
-  ten.style.display = "none";
-  eleven.style.display = "none";
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    nine.style.display = "none";
+    ten.style.display = "none";
+    eleven.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 9) {
-
-  ten.style.display = "none";
-  eleven.style.display = "none";
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    ten.style.display = "none";
+    eleven.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 10) {
-
-  eleven.style.display = "none";
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    eleven.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 11) {
-
-
-  twelve.style.display = "none";
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    twelve.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 12) {
-
-
-  thirteen.style.display = "none";
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    thirteen.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 13) {
-
-
-  fourteen.style.display = "none";
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    fourteen.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 14) {
-
-
-  fifteen.style.display = "none";
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    fifteen.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 15) {
-
-  sixteen.style.display = "none";
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    sixteen.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 if (picked.length == 16) {
-
-  seventeen.style.display = "none";
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    seventeen.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 
 if (picked.length == 17) {
-
-
-  eighteen.style.display = "none";
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    eighteen.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 
 if (picked.length == 18) {
-
-  nineteen.style.display = "none";
-  twenty.style.display = "none";
+    nineteen.style.display = "none";
+    twenty.style.display = "none";
 }
 
 if (picked.length == 19) {
-
-
-  twenty.style.display = "none";
+    twenty.style.display = "none";
 }
-
-
-
