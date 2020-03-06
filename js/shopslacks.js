@@ -1,5 +1,12 @@
 let picked = JSON.parse(localStorage.getItem("picked"));
-if (picked == 0) {
+if (
+  picked == null ||
+  picked == undefined ||
+  picked == 0 ||
+  picked.length == null ||
+  picked.length == undefined ||
+  picked.length == 0
+) {
   picked = [];
 }
 document.getElementById("picked").innerHTML = picked.length;
@@ -13,18 +20,20 @@ if (document.readyState == "loading") {
 function ready() {
   //creates the shop with the products from products.json
   fetch("products.json")
-    .then(function (resp) {
+    .then(function(resp) {
       return resp.json();
     })
-    .then(function (data) {
+    .then(function(data) {
       let clothes = [];
 
       function setEleven(event) {
         setter = 10;
       }
+
       function setTwelve(event) {
         setter = 11;
       }
+
       function setThirteen(event) {
         setter = 12;
       }

@@ -1,89 +1,97 @@
 let picked = JSON.parse(localStorage.getItem("picked"));
-if (picked == 0) {
-  picked = [];
+if (
+    picked == null ||
+    picked == undefined ||
+    picked == 0 ||
+    picked.length == null ||
+    picked.length == undefined ||
+    picked.length == 0
+) {
+    picked = [];
 }
 document.getElementById("picked").innerHTML = picked.length;
 //creates efficient loading of the website
 if (document.readyState == "loading") {
-  document.addEventListener("DOMContentLoaded", ready);
+    document.addEventListener("DOMContentLoaded", ready);
 } else {
-  ready();
+    ready();
 }
 
 function ready() {
-  //creates the shop with the products from products.json
-  fetch("products.json")
-    .then(function (resp) {
-      return resp.json();
-    })
-    .then(function (data) {
-      let clothes = [];
-      function setOne(event) {
-        setter = 0;
-      }
+    //creates the shop with the products from products.json
+    fetch("products.json")
+        .then(function(resp) {
+            return resp.json();
+        })
+        .then(function(data) {
+            let clothes = [];
 
-      function setTwo(event) {
-        setter = 1;
-      }
+            function setOne(event) {
+                setter = 0;
+            }
 
-      class Cloth {
-        constructor(number) {
-          this.number = number;
-          this.title = data.items[number].fields.title;
-          this.price = data.items[number].fields.price;
-          this.image = data.items[number].fields.image.fields.file.url;
-          document.getElementById("title" + number).innerHTML = this.title;
-          document.getElementById("price" + number).innerHTML = this.price;
-          document.getElementById("img" + number).src = this.image;
-        }
-      }
-      for (var i = 0; i < 2; i++) {
-        clothes.push(new Cloth(i));
-        localStorage.setItem("clothes", JSON.stringify(clothes));
-      }
+            function setTwo(event) {
+                setter = 1;
+            }
 
-      document.getElementById("picked").innerHTML = picked.length;
+            class Cloth {
+                constructor(number) {
+                    this.number = number;
+                    this.title = data.items[number].fields.title;
+                    this.price = data.items[number].fields.price;
+                    this.image = data.items[number].fields.image.fields.file.url;
+                    document.getElementById("title" + number).innerHTML = this.title;
+                    document.getElementById("price" + number).innerHTML = this.price;
+                    document.getElementById("img" + number).src = this.image;
+                }
+            }
+            for (var i = 0; i < 2; i++) {
+                clothes.push(new Cloth(i));
+                localStorage.setItem("clothes", JSON.stringify(clothes));
+            }
 
-      document
-        .getElementById("one")
-        .addEventListener("mouseover", setOne, false);
+            document.getElementById("picked").innerHTML = picked.length;
 
-      document
-        .getElementById("one")
-        .addEventListener("click", addToCart, false);
+            document
+                .getElementById("one")
+                .addEventListener("mouseover", setOne, false);
 
-      document
-        .getElementById("two")
-        .addEventListener("mouseover", setTwo, false);
+            document
+                .getElementById("one")
+                .addEventListener("click", addToCart, false);
 
-      document
-        .getElementById("two")
-        .addEventListener("click", addToCart, false);
+            document
+                .getElementById("two")
+                .addEventListener("mouseover", setTwo, false);
 
-      function addToCart(event) {
-        event.preventDefault();
-        picked.push(new Cloth(setter));
-        localStorage.setItem("picked", JSON.stringify(picked));
+            document
+                .getElementById("two")
+                .addEventListener("click", addToCart, false);
 
-        document.getElementById("picked").innerHTML = picked.length;
-        if (setter == 0) {
-          document
-            .getElementById("one")
-            .removeEventListener("mouseover", setOne, false);
-          document
-            .getElementById("one")
-            .removeEventListener("click", addToCart, false);
-        }
-        if (setter == 1) {
-          document
-            .getElementById("two")
-            .removeEventListener("mouseover", setTwo, false);
-          document
-            .getElementById("two")
-            .removeEventListener("click", addToCart, false);
-        }
-      }
-    });
+            function addToCart(event) {
+                event.preventDefault();
+                picked.push(new Cloth(setter));
+                localStorage.setItem("picked", JSON.stringify(picked));
 
-  //makes sure the add to cart button works by adding objects
+                document.getElementById("picked").innerHTML = picked.length;
+                if (setter == 0) {
+                    document
+                        .getElementById("one")
+                        .removeEventListener("mouseover", setOne, false);
+                    document
+                        .getElementById("one")
+                        .removeEventListener("click", addToCart, false);
+                }
+                if (setter == 1) {
+                    document
+                        .getElementById("two")
+                        .removeEventListener("mouseover", setTwo, false);
+                    document
+                        .getElementById("two")
+                        .removeEventListener("click", addToCart, false);
+                }
+            }
+        });
+
+    //makes sure the add to cart button works by adding objects
 }

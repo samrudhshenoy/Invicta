@@ -1,5 +1,12 @@
 let picked = JSON.parse(localStorage.getItem("picked"));
-if (picked == 0) {
+if (
+  picked == null ||
+  picked == undefined ||
+  picked == 0 ||
+  picked.length == null ||
+  picked.length == undefined ||
+  picked.length == 0
+) {
   picked = [];
 }
 document.getElementById("picked").innerHTML = picked.length;
@@ -13,11 +20,12 @@ if (document.readyState == "loading") {
 function ready() {
   //creates the shop with the products from products.json
   fetch("products.json")
-    .then(function (resp) {
+    .then(function(resp) {
       return resp.json();
     })
-    .then(function (data) {
+    .then(function(data) {
       let clothes = [];
+
       function setOne(event) {
         setter = 0;
       }
@@ -25,9 +33,11 @@ function ready() {
       function setTwo(event) {
         setter = 1;
       }
+
       function setThree(event) {
         setter = 2;
       }
+
       function setFour(event) {
         setter = 3;
       }
@@ -35,132 +45,175 @@ function ready() {
       function setSix(event) {
         setter = 5;
       }
+
       function setSeven(event) {
         setter = 6;
       }
+
       function setEight(event) {
         setter = 7;
       }
+
       function setNine(event) {
         setter = 8;
       }
+
       function setTen(event) {
         setter = 9;
       }
+
       function setEleven(event) {
         setter = 10;
       }
+
       function setTwelve(event) {
         setter = 11;
       }
+
       function setThirteen(event) {
         setter = 12;
       }
+
       function setFourteen(event) {
         setter = 13;
       }
+
       function setFifteen(event) {
         setter = 14;
       }
+
       function setSixteen(event) {
         setter = 15;
       }
+
       function setSeventeen(event) {
         setter = 16;
       }
+
       function setEighteen(event) {
         setter = 17;
       }
+
       function setNineteen(event) {
         setter = 18;
       }
+
       function setTwenty(event) {
         setter = 19;
       }
+
       function setTwentyOne(event) {
         setter = 20;
       }
+
       function setTwentyTwo(event) {
         setter = 21;
       }
+
       function setTwentyThree(event) {
         setter = 22;
       }
+
       function setTwentyFour(event) {
         setter = 23;
       }
+
       function setTwentyFive(event) {
         setter = 24;
       }
+
       function setTwentySix(event) {
         setter = 25;
       }
+
       function setTwentySeven(event) {
         setter = 26;
       }
+
       function setTwentyEight(event) {
         setter = 27;
       }
+
       function setTwentyNine(event) {
         setter = 28;
       }
+
       function setThirty(event) {
         setter = 29;
       }
+
       function setThirtyOne(event) {
         setter = 30;
       }
+
       function setThirtyTwo(event) {
         setter = 31;
       }
+
       function setThirtyThree(event) {
         setter = 32;
       }
+
       function setThirtyFour(event) {
         setter = 33;
       }
+
       function setThirtyFive(event) {
         setter = 34;
       }
+
       function setThirtySix(event) {
         setter = 35;
       }
+
       function setThirtySeven(event) {
         setter = 36;
       }
+
       function setThirtyEight(event) {
         setter = 37;
       }
+
       function setThirtyNine(event) {
         setter = 38;
       }
+
       function setFourty(event) {
         setter = 39;
       }
+
       function setFourtyOne(event) {
         setter = 40;
       }
+
       function setFourtyTwo(event) {
         setter = 41;
       }
+
       function setFourtyThree(event) {
         setter = 42;
       }
+
       function setFourtyFour(event) {
         setter = 43;
       }
+
       function setFourtyFive(event) {
         setter = 44;
       }
+
       function setFourtySix(event) {
         setter = 45;
       }
+
       function setFourtySeven(event) {
         setter = 46;
       }
+
       function setFourtyEight(event) {
         setter = 47;
       }
+
       function setFourtyNine(event) {
         setter = 48;
       }
